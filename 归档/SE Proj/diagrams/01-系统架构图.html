@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>前端系统架构图</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #fff;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  .diagram {
+    width: 960px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px 0 0 0;
+  }
+  .diagram-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #303133;
+    margin-bottom: 4px;
+  }
+  .diagram-sub {
+    text-align: center;
+    font-size: 12px;
+    color: #909399;
+    margin-bottom: 16px;
+  }
+
+  /* Layer containers */
+  .layer {
+    border: 2px solid #d0d5dd;
+    border-radius: 8px;
+    margin: 0 32px 16px;
+    padding: 12px 16px;
+    position: relative;
+  }
+  .layer-label {
+    position: absolute;
+    top: -12px;
+    left: 16px;
+    background: #fff;
+    padding: 0 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #606266;
+  }
+  .layer-view { border-color: #409eff; }
+  .layer-view .layer-label { color: #409eff; }
+  .layer-state { border-color: #67c23a; }
+  .layer-state .layer-label { color: #67c23a; }
+  .layer-api { border-color: #e6a23c; }
+  .layer-api .layer-label { color: #e6a23c; }
+  .layer-backend { border-color: #f56c6c; }
+  .layer-backend .layer-label { color: #f56c6c; }
+
+  /* Boxes */
+  .box-row {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .box {
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    min-width: 100px;
+  }
+  .box-blue { background: #ecf5ff; color: #409eff; border: 1px solid #d9ecff; }
+  .box-green { background: #f0f9eb; color: #67c23a; border: 1px solid #e1f3d8; }
+  .box-orange { background: #fdf6ec; color: #e6a23c; border: 1px solid #faecd8; }
+  .box-red { background: #fef0f0; color: #f56c6c; border: 1px solid #fde2e2; }
+  .box-purple { background: #f4f0fe; color: #8b5cf6; border: 1px solid #ede2fd; }
+  .box-cyan { background: #e6f7f7; color: #14a3a3; border: 1px solid #ceeeee; }
+
+  /* Arrows between layers */
+  .arrow-row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 4px 0 4px;
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: #909399;
+    position: relative;
+  }
+  .arrow::after {
+    content: '';
+    display: block;
+    width: 0; height: 0;
+    border-left: 5px solid #c0c4cc;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+  }
+
+  /* Internal flows */
+  .flow-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 8px 0;
+    font-size: 12px;
+    color: #909399;
+  }
+  .flow-line svg {
+    flex-shrink: 0;
+    color: #c0c4cc;
+  }
+
+  /* Caption */
+  .caption {
+    text-align: center;
+    font-size: 11px;
+    color: #c0c4cc;
+    padding: 12px 0;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="diagram">
+  <div class="diagram-title">前端系统四层架构</div>
+  <div class="diagram-sub">AI 个性化私人健康管理系统 · 架构设计</div>
+
+  <!-- View Layer -->
+  <div class="layer layer-view">
+    <div class="layer-label">视图层 View Layer</div>
+    <div class="box-row">
+      <div class="box box-blue">LoginView</div>
+      <div class="box box-blue">HomeView</div>
+      <div class="box box-blue">HealthDataView</div>
+      <div class="box box-blue">AiHealthProfile</div>
+      <div class="box box-blue">ReminderView</div>
+    </div>
+    <div class="box-row" style="margin-top:8px">
+      <div class="box box-purple">AppSidebar</div>
+      <div class="box box-purple">AppHeader</div>
+      <div class="box box-purple">ReminderPopup</div>
+      <div class="box box-purple">LoadingSpinner</div>
+      <div class="box box-purple">EmptyState</div>
+    </div>
+    <div style="text-align:right;font-size:11px;color:#909399;margin-top:4px">Views 页面 + Components 组件</div>
+  </div>
+
+  <!-- Arrows -->
+  <div class="arrow-row">
+    <div class="arrow">调用 API</div>
+    <div class="arrow">读写 Store</div>
+  </div>
+
+  <!-- State Layer -->
+  <div class="layer layer-state">
+    <div class="layer-label">状态层 State Layer</div>
+    <div class="box-row">
+      <div class="box box-green">Pinia userStore</div>
+      <div class="box box-cyan">localStorage</div>
+      <div class="box box-green" style="border-style:dashed">Map 缓存</div>
+    </div>
+    <div class="flow-line">
+      <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 3L8 13M8 3L5 6M8 3L11 6" stroke="#c0c4cc" stroke-width="1.5" fill="none"/></svg>
+      双向同步
+      <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 13L8 3M8 13L5 10M8 13L11 10" stroke="#c0c4cc" stroke-width="1.5" fill="none"/></svg>
+    </div>
+    <div style="text-align:right;font-size:11px;color:#909399;margin-top:4px">token / userInfo 持久化 + 响应式状态 + 内存缓存</div>
+  </div>
+
+  <!-- Arrows -->
+  <div class="arrow-row">
+    <div class="arrow">HTTP 请求</div>
+  </div>
+
+  <!-- API Layer -->
+  <div class="layer layer-api">
+    <div class="layer-label">接口层 API Layer</div>
+    <div class="box-row">
+      <div class="box box-orange">auth.ts</div>
+      <div class="box box-orange">health.ts</div>
+      <div class="box box-orange">ai.ts</div>
+      <div class="box box-orange">reminder.ts</div>
+      <div class="box box-orange">knowledge.ts</div>
+      <div class="box box-orange">admin.ts</div>
+    </div>
+    <div class="box-row" style="margin-top:8px">
+      <div class="box box-orange" style="border-style:dashed">mock.ts</div>
+      <div class="box box-orange" style="border:2px solid #e6a23c">request.ts (Axios)</div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:60px;margin-top:6px;font-size:11px;color:#909399">
+      <span>Mock 开关: VITE_MOCK_API / VITE_MOCK_AUTH</span>
+      <span>拦截器: 附加 Token + 统一错误处理</span>
+    </div>
+  </div>
+
+  <!-- Arrows -->
+  <div class="arrow-row">
+    <div class="arrow">HTTP / REST</div>
+  </div>
+
+  <!-- Backend Layer -->
+  <div class="layer layer-backend">
+    <div class="layer-label">后端服务 Backend Services</div>
+    <div class="box-row">
+      <div class="box box-red">Spring Boot :8080</div>
+      <div class="box box-red">FastAPI AI :8000</div>
+      <div class="box box-red">MySQL 8.4 :3306</div>
+    </div>
+    <div style="text-align:right;font-size:11px;color:#909399;margin-top:4px">业务 API + AI 模型推理 + 数据持久化</div>
+  </div>
+
+  <div class="caption">图1 · 系统分层架构图</div>
+</div>
+</body>
+</html>

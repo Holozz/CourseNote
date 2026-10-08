@@ -1,0 +1,14 @@
+{
+  "theme": "moonstone",
+  "cssTheme": "Things",
+  "baseFontSizeAction": true,
+  "baseFontSize": 15,
+  "accentColor": "#773153",
+  "textFontFamily": "eras ITC,Fira code,Times New Roman",
+  "interfaceFontFamily": "eras ITC,Arial Black,Times New Roman",
+  "nativeMenus": false,
+  "enabledCssSnippets": [
+    "cover",
+    "report-cover"
+  ]
+}

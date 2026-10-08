@@ -1,0 +1,29 @@
+.cover {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.cover h1 {
+  font-size: 2em;
+  font-family: '宋体', Monospace, SimSun, serif !important;
+}
+
+.cover h2 {
+  font-size: 1.6em;
+  margin-bottom: 200px;
+}
+
+.cover .info {
+  font-size: 1.2em;
+  font-family: '宋体', 'Songti SC', SimSun, serif !important;
+  font-weight: bold;
+}
+
+.cover .info p {
+  margin: 0.3em 0;
+}
+
+.cover .date {
+  font-size: 1.2em;
+}

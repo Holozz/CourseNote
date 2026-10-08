@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>路由守卫流程图</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #fff;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  .diagram {
+    width: 760px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 24px;
+  }
+  .diagram-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #303133;
+    margin-bottom: 24px;
+  }
+
+  .flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  /* Nodes */
+  .fnode {
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    z-index: 1;
+  }
+  .fnode-start { background: #303133; color: #fff; border-radius: 20px; }
+  .fnode-end { background: #303133; color: #fff; border-radius: 20px; }
+  .fnode-diamond {
+    width: 180px;
+    padding: 12px 10px;
+    background: #ecf5ff;
+    color: #409eff;
+    border: 1.5px solid #409eff;
+    transform: rotate(0);
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    font-size: 11px;
+    line-height: 1.4;
+    margin: 4px 0;
+  }
+  .fnode-diamond.danger { background: #fef0f0; color: #f56c6c; border-color: #f56c6c; }
+  .fnode-diamond.warn { background: #fdf6ec; color: #e6a23c; border-color: #e6a23c; }
+  .fnode-action { background: #f0f9eb; color: #67c23a; border: 1.5px solid #67c23a; border-radius: 6px; }
+  .fnode-action.danger { background: #fef0f0; color: #f56c6c; border-color: #f56c6c; }
+
+  /* Arrows / Lines */
+  .flow-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #909399;
+    font-size: 12px;
+  }
+  .flow-arrow svg { flex-shrink: 0; }
+
+  /* Branch labels */
+  .branch-label {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .branch-yes { color: #67c23a; }
+  .branch-no { color: #f56c6c; }
+
+  /* Branch row */
+  .branch-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+  }
+  .branch-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .legend {
+    border-top: 1px solid #f0f0f0;
+    margin-top: 20px;
+    padding-top: 12px;
+    display: flex;
+    gap: 20px;
+    font-size: 11px;
+    color: #909399;
+    justify-content: center;
+  }
+</style>
+</head>
+<body>
+<div class="diagram">
+  <div class="diagram-title">路由守卫流程图 · router.beforeEach</div>
+
+  <div class="flow">
+    <!-- Start -->
+    <div class="fnode fnode-start">导航触发</div>
+
+    <!-- Arrow -->
+    <div class="flow-arrow">▼</div>
+
+    <!-- Decision 1 -->
+    <div class="fnode fnode-diamond">目标路径是<br>/login 或 /register？</div>
+
+    <div class="branch-row">
+      <!-- Yes branch -->
+      <div class="branch-col">
+        <span class="branch-label branch-yes">✓ 是</span>
+        <div class="flow-arrow">▼</div>
+        <div class="fnode fnode-diamond warn">已有 token？</div>
+        <div class="branch-row" style="gap:20px">
+          <div class="branch-col">
+            <span class="branch-label branch-yes">是</span>
+            <div class="flow-arrow">▼</div>
+            <div class="fnode fnode-action danger">重定向 /home</div>
+          </div>
+          <div class="branch-col">
+            <span class="branch-label branch-no">否</span>
+            <div class="flow-arrow">▼</div>
+            <div class="fnode fnode-action">放行 ✅</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- No branch (main path) -->
+      <div class="branch-col">
+        <span class="branch-label branch-no">✗ 否（业务页）</span>
+        <div class="flow-arrow">▼</div>
+        <div class="fnode fnode-diamond danger">已有 token？</div>
+        <div class="branch-row" style="gap:20px">
+          <div class="branch-col">
+            <span class="branch-label branch-yes">是</span>
+            <div class="flow-arrow">▼</div>
+            <div class="fnode fnode-diamond warn">meta.requiresAdmin？</div>
+            <div class="branch-row" style="gap:20px">
+              <div class="branch-col">
+                <span class="branch-label branch-yes">是</span>
+                <div class="flow-arrow">▼</div>
+                <div class="fnode fnode-diamond danger">role === 'admin'？</div>
+                <div class="branch-row" style="gap:20px">
+                  <div class="branch-col">
+                    <span class="branch-label branch-yes">是</span>
+                    <div class="flow-arrow">▼</div>
+                    <div class="fnode fnode-action">放行 ✅</div>
+                  </div>
+                  <div class="branch-col">
+                    <span class="branch-label branch-no">否</span>
+                    <div class="flow-arrow">▼</div>
+                    <div class="fnode fnode-action danger">重定向 /home</div>
+                  </div>
+                </div>
+              </div>
+              <div class="branch-col">
+                <span class="branch-label branch-no">否（普通页面）</span>
+                <div class="flow-arrow">▼</div>
+                <div class="fnode fnode-action">放行 ✅</div>
+              </div>
+            </div>
+          </div>
+          <div class="branch-col">
+            <span class="branch-label branch-no">否</span>
+            <div class="flow-arrow">▼</div>
+            <div class="fnode fnode-action danger">重定向 /login</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span><span class="fnode-diamond" style="display:inline-block;clip-path:none;border-radius:4px;padding:2px 10px;font-size:10px;width:auto;margin:0">判断节点</span> 条件分支</span>
+    <span><span class="fnode-action" style="display:inline-block;padding:2px 10px;font-size:10px;width:auto">放行</span> 允许通过</span>
+    <span><span class="fnode-action danger" style="display:inline-block;padding:2px 10px;font-size:10px;width:auto">重定向</span> 拒绝访问</span>
+  </div>
+</div>
+</body>
+</html>

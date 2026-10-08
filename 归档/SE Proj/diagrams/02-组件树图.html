@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>前端组件树图</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #fff;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  .diagram {
+    width: 1060px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px 24px;
+  }
+  .diagram-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #303133;
+    margin-bottom: 20px;
+  }
+
+  .tree { font-size: 13px; line-height: 1.8; }
+
+  /* Nodes */
+  .node {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .node-root { background: #303133; color: #fff; }
+  .node-page { background: #ecf5ff; color: #409eff; border: 1px solid #d9ecff; }
+  .node-page-indie { background: #fdf6ec; color: #e6a23c; border: 1px solid #faecd8; }
+  .node-layout { background: #f4f0fe; color: #8b5cf6; border: 1px solid #ede2fd; }
+  .node-comp { background: #f0f9eb; color: #67c23a; border: 1px solid #e1f3d8; }
+  .node-common { background: #fef0f0; color: #f56c6c; border: 1px solid #fde2e2; }
+  .node-leaf { background: #f5f7fa; color: #909399; border: 1px solid #e4e7ed; }
+
+  /* Lines */
+  .tree-line {
+    display: flex;
+    align-items: flex-start;
+  }
+  .tree-branch {
+    border-left: 2px solid #d0d5dd;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  .tree-entry {
+    position: relative;
+    padding: 1px 0;
+  }
+  .tree-entry::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 12px;
+    width: 16px;
+    border-top: 2px solid #d0d5dd;
+  }
+  .tree-entry:first-child::before {
+    top: 12px;
+    height: auto;
+  }
+
+  /* Group labels */
+  .group-label {
+    display: inline-block;
+    font-size: 11px;
+    color: #c0c4cc;
+    margin-left: 6px;
+    font-weight: 400;
+  }
+  .divider {
+    border-top: 1px dashed #e4e7ed;
+    margin: 10px 0;
+  }
+</style>
+</head>
+<body>
+<div class="diagram">
+  <div class="diagram-title">前端组件树 · Component Tree</div>
+
+  <div class="tree">
+    <!-- Root -->
+    <div class="tree-entry">
+      <span class="node node-root">App.vue</span>
+      <span class="group-label">根组件</span>
+    </div>
+
+    <div class="tree-branch">
+      <!-- Independent pages -->
+      <div class="tree-entry">
+        <span class="node node-page-indie">LoginView.vue</span>
+        <span class="group-label">独立布局 · 登录页</span>
+      </div>
+      <div class="tree-entry">
+        <span class="node node-page-indie">RegisterView.vue</span>
+        <span class="group-label">独立布局 · 注册页</span>
+      </div>
+
+      <!-- Layout shell -->
+      <div class="tree-entry">
+        <span class="node node-layout">LayoutView.vue</span>
+        <span class="group-label">后台布局壳</span>
+      </div>
+      <div class="tree-branch">
+        <!-- Layout children -->
+        <div class="tree-entry">
+          <span class="node node-comp">AppSidebar.vue</span>
+          <span class="group-label">左侧导航菜单</span>
+        </div>
+        <div class="tree-entry">
+          <span class="node node-comp">AppHeader.vue</span>
+          <span class="group-label">顶部栏</span>
+        </div>
+        <div class="tree-entry">
+          <span class="node node-comp">ReminderPopup.vue</span>
+          <span class="group-label">全局提醒弹窗 (Teleport)</span>
+        </div>
+
+        <!-- Sub-router pages -->
+        <div style="margin-top:4px;font-size:11px;color:#909399;padding-left:20px">└─ &#60;RouterView /&#62; 子路由页面</div>
+        <div class="tree-branch" style="margin-top:2px">
+          <div class="tree-entry"><span class="node node-page">HomeView.vue</span></div>
+          <div class="tree-entry"><span class="node node-page">HealthDataView.vue</span></div>
+          <div class="tree-entry"><span class="node node-page">HealthTrendView.vue</span></div>
+          <div class="tree-entry"><span class="node node-page">AiHealthProfile.vue</span></div>
+          <div class="tree-entry"><span class="node node-page">AiHealthPlan.vue</span></div>
+          <div class="tree-entry"><span class="node node-page">AiAdviceView.vue</span><span class="group-label">预留</span></div>
+          <div class="tree-entry"><span class="node node-page">KnowledgeView.vue</span></div>
+          <div class="tree-entry"><span class="node node-page">ReminderView.vue</span></div>
+          <div class="tree-entry"><span class="node node-page">ProfileView.vue</span></div>
+          <div class="tree-entry"><span class="node node-page">admin/UserManagement.vue</span><span class="group-label">管理员</span></div>
+          <div class="tree-entry"><span class="node node-page">admin/StatisticsView.vue</span><span class="group-label">管理员</span></div>
+
+          <!-- Common components used by pages -->
+          <div class="divider"></div>
+          <div style="font-size:11px;color:#909399;margin-bottom:2px">页面引用的公共组件：</div>
+          <div class="tree-entry"><span class="node node-common">EmptyState.vue</span><span class="group-label">Home / Health / Trend / AI / Admin 共用</span></div>
+          <div class="tree-entry"><span class="node node-common">LoadingSpinner.vue</span><span class="group-label">AiHealthProfile / AiHealthPlan 共用</span></div>
+          <div class="tree-entry"><span class="node node-leaf">HealthChart.vue</span><span class="group-label">预留组件</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <div style="border-top:1px solid #f0f0f0;margin-top:20px;padding-top:12px;display:flex;gap:20px;font-size:12px;color:#909399;justify-content:center">
+    <span><span class="node node-root" style="font-size:11px">■</span> 根组件</span>
+    <span><span class="node node-layout" style="font-size:11px">■</span> 布局组件</span>
+    <span><span class="node node-page" style="font-size:11px">■</span> 业务页面</span>
+    <span><span class="node node-page-indie" style="font-size:11px">■</span> 独立页面</span>
+    <span><span class="node node-comp" style="font-size:11px">■</span> 布局子组件</span>
+    <span><span class="node node-common" style="font-size:11px">■</span> 公共复用组件</span>
+  </div>
+</div>
+</body>
+</html>

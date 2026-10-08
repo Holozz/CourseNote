@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>后台布局线框图</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #f0f2f5;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+  }
+  .diagram {
+    width: 1060px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+  .diagram-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #303133;
+    margin-bottom: 4px;
+  }
+  .diagram-sub {
+    text-align: center;
+    font-size: 12px;
+    color: #909399;
+    margin-bottom: 20px;
+  }
+
+  /* Layout mockup */
+  .mockup {
+    border: 2px solid #303133;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .mockup-topbar {
+    background: #303133;
+    color: #fff;
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+  }
+  .mockup-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .mockup-dot.r { background: #ff5f57; }
+  .mockup-dot.y { background: #febc2e; }
+  .mockup-dot.g { background: #28c840; }
+  .mockup-url {
+    background: #555;
+    border-radius: 3px;
+    padding: 2px 12px;
+    font-size: 10px;
+    margin-left: 8px;
+    opacity: 0.8;
+  }
+
+  /* Body */
+  .mockup-body {
+    display: flex;
+    height: 520px;
+  }
+
+  /* Sidebar */
+  .mockup-sidebar {
+    width: 220px;
+    background: #304156;
+    color: #bfcbd9;
+    font-size: 12px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-logo {
+    padding: 16px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .sidebar-logo-icon {
+    width: 28px; height: 28px;
+    background: linear-gradient(135deg, #409eff, #8b5cf6);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  .sidebar-menu {
+    padding: 8px 0;
+  }
+  .sidebar-item {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+  }
+  .sidebar-item.active {
+    color: #409eff;
+    background: rgba(64,158,255,0.1);
+    border-left-color: #409eff;
+  }
+  .sidebar-item .icon {
+    width: 18px; text-align: center;
+    font-size: 14px;
+  }
+  .sidebar-group {
+    padding: 8px 20px 4px;
+    color: #6b7b8d;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 4px;
+  }
+  .sidebar-divider {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    margin: 4px 16px;
+  }
+  .sidebar-sub {
+    padding: 8px 20px 8px 44px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+  }
+
+  /* Main area */
+  .mockup-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  /* Header */
+  .mockup-header {
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-shrink: 0;
+  }
+  .header-breadcrumb {
+    font-size: 13px;
+    color: #909399;
+  }
+  .header-breadcrumb .current {
+    color: #303133;
+    font-weight: 600;
+  }
+  .header-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #606266;
+  }
+  .header-avatar {
+    width: 32px; height: 32px;
+    background: #409eff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .header-logout {
+    color: #f56c6c;
+    font-size: 12px;
+    cursor: default;
+  }
+
+  /* Content */
+  .mockup-content {
+    flex: 1;
+    background: #f5f7fa;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  .content-card {
+    background: #fff;
+    border: 1px solid #ebeef5;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .content-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #303133;
+  }
+
+  /* Placeholder blocks */
+  .placeholder-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    flex: 1;
+  }
+  .placeholder-block {
+    background: #f5f7fa;
+    border: 1.5px dashed #d0d5dd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c0c4cc;
+    font-size: 12px;
+  }
+
+  /* Reminder popup overlay */
+  .popup-overlay {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 340px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+    padding: 18px;
+    z-index: 10;
+  }
+  .popup-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .popup-icon { font-size: 24px; }
+  .popup-title { font-weight: 600; font-size: 14px; color: #303133; }
+  .popup-time { font-size: 12px; color: #909399; }
+  .popup-body {
+    font-size: 13px; color: #606266; margin-bottom: 12px; line-height: 1.5;
+  }
+  .popup-btns {
+    display: flex; justify-content: flex-end; gap: 8px;
+  }
+  .popup-btn {
+    padding: 5px 14px; border-radius: 4px; font-size: 12px;
+    border: 1px solid #dcdfe6; background: #fff; color: #606266;
+  }
+  .popup-btn.primary {
+    background: #409eff; color: #fff; border-color: #409eff;
+  }
+
+  /* Dimension lines */
+  .dim {
+    position: absolute;
+    font-size: 10px;
+    color: #f56c6c;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .dim-h { flex-direction: row; }
+  .dim-v { flex-direction: column; }
+  .dim-line { background: #f56c6c; }
+  .dim-line.h { height: 1px; width: 40px; }
+  .dim-line.v { width: 1px; }
+
+  /* Annotations */
+  .annotations {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    font-size: 11px;
+    color: #606266;
+  }
+  .annot {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .annot-dot {
+    width: 8px; height: 8px;
+    border-radius: 2px;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+<div class="diagram">
+  <div class="diagram-title">后台布局线框图 · LayoutView</div>
+  <div class="diagram-sub">侧边栏 220px + 顶部栏 60px + 主内容区 + 全局提醒弹窗</div>
+
+  <div class="mockup">
+    <!-- Mock browser chrome -->
+    <div class="mockup-topbar">
+      <span class="mockup-dot r"></span>
+      <span class="mockup-dot y"></span>
+      <span class="mockup-dot g"></span>
+      <span class="mockup-url">http://127.0.0.1:5173/home</span>
+    </div>
+
+    <div class="mockup-body">
+      <!-- Sidebar -->
+      <div class="mockup-sidebar">
+        <div class="sidebar-logo">
+          <div class="sidebar-logo-icon">♥</div>
+          AI 健康管理
+        </div>
+        <div class="sidebar-menu">
+          <div class="sidebar-item active">
+            <span class="icon">🏠</span> 首页
+          </div>
+          <div class="sidebar-item">
+            <span class="icon">💻</span> 健康数据
+          </div>
+          <div class="sidebar-item">
+            <span class="icon">📈</span> 健康趋势
+          </div>
+          <div class="sidebar-item">
+            <span class="icon">✨</span> AI 健康分析
+          </div>
+          <div class="sidebar-sub">👤 健康画像</div>
+          <div class="sidebar-sub">📄 健康计划</div>
+          <div class="sidebar-sub">📖 健康知识</div>
+          <div class="sidebar-item">
+            <span class="icon">⏰</span> 健康提醒
+          </div>
+          <div class="sidebar-item">
+            <span class="icon">👤</span> 个人中心
+          </div>
+          <div class="sidebar-divider"></div>
+          <div class="sidebar-group">管理员</div>
+          <div class="sidebar-item">
+            <span class="icon">👥</span> 用户管理
+          </div>
+          <div class="sidebar-item">
+            <span class="icon">📊</span> 数据统计
+          </div>
+        </div>
+      </div>
+
+      <!-- Main -->
+      <div class="mockup-main">
+        <!-- Top header -->
+        <div class="mockup-header">
+          <div class="header-breadcrumb">
+            <span class="current">🏠 首页</span>
+          </div>
+          <div class="header-user">
+            <span>用户名</span>
+            <div class="header-avatar">U</div>
+            <span class="header-logout">退出登录</span>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="mockup-content">
+          <div class="content-card">
+            <div class="content-card-title">📊 页面内容区</div>
+            <div class="placeholder-grid">
+              <div class="placeholder-block">健康概览卡片</div>
+              <div class="placeholder-block">快捷入口</div>
+              <div class="placeholder-block">数据图表</div>
+              <div class="placeholder-block">列表表格</div>
+              <div class="placeholder-block">表单输入</div>
+              <div class="placeholder-block">统计面板</div>
+            </div>
+          </div>
+
+          <!-- Reminder popup -->
+          <div class="popup-overlay">
+            <div class="popup-header">
+              <span class="popup-icon">💊</span>
+              <div>
+                <div class="popup-title">吃药时间到</div>
+                <div class="popup-time">⏰ 08:30</div>
+              </div>
+            </div>
+            <div class="popup-body">请按时服药，保持健康从规律用药开始。</div>
+            <div class="popup-btns">
+              <span class="popup-btn">稍后提醒</span>
+              <span class="popup-btn primary">已完成</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Annotations -->
+  <div class="annotations">
+    <div class="annot"><span class="annot-dot" style="background:#304156"></span> 侧边栏 220px · el-menu router 模式</div>
+    <div class="annot"><span class="annot-dot" style="background:#fff;border:1px solid #dcdfe6"></span> 顶部栏 60px · 用户名 + 退出登录</div>
+    <div class="annot"><span class="annot-dot" style="background:#f5f7fa;border:1px solid #dcdfe6"></span> 主内容区 · #f5f7fa 背景 · &#60;RouterView /&#62; 路由出口</div>
+    <div class="annot"><span class="annot-dot" style="background:#fff;border:2px solid #409eff"></span> 提醒弹窗 · &#60;Teleport to="body"&#62; 右下角滑入</div>
+    <div class="annot"><span class="annot-dot" style="background:#304156;border-left:3px solid #409eff"></span> 菜单高亮 · :default-active="route.path"</div>
+    <div class="annot"><span class="annot-dot" style="background:#f56c6c"></span> 管理员菜单 · v-if="isAdmin" 条件渲染</div>
+  </div>
+
+  <!-- Dimension legend -->
+  <div style="margin-top:12px;font-size:11px;color:#909399;text-align:center">
+    桌面端默认布局 · 小屏 ≤768px 时侧边栏折叠 + 卡片堆叠（响应式适配）
+  </div>
+</div>
+</body>
+</html>

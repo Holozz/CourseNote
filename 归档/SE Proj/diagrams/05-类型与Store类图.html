@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>类型与Store类图</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #fff;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  .diagram {
+    width: 1020px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 24px;
+  }
+  .diagram-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #303133;
+    margin-bottom: 4px;
+  }
+  .diagram-sub {
+    text-align: center;
+    font-size: 12px;
+    color: #909399;
+    margin-bottom: 20px;
+  }
+
+  .class-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  /* UML Class box */
+  .class-box {
+    border: 1.5px solid #303133;
+    border-radius: 6px;
+    overflow: hidden;
+    min-width: 220px;
+    background: #fff;
+    font-size: 12px;
+  }
+  .class-box.store { border-color: #67c23a; }
+  .class-box.store .class-name { background: #67c23a; }
+  .class-box.iface { border-color: #409eff; }
+  .class-box.iface .class-name { background: #409eff; }
+  .class-box.type { border-color: #e6a23c; }
+  .class-box.type .class-name { background: #e6a23c; }
+  .class-box.api { border-color: #8b5cf6; }
+  .class-box.api .class-name { background: #8b5cf6; }
+
+  .class-name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 6px 10px;
+    text-align: center;
+  }
+  .class-name .stereotype {
+    font-weight: 400;
+    font-size: 10px;
+    opacity: 0.8;
+  }
+  .class-body {
+    padding: 8px 10px;
+  }
+  .class-section {
+    border-top: 1px solid #d0d5dd;
+    padding: 4px 0;
+    font-size: 11px;
+    color: #606266;
+    line-height: 1.8;
+  }
+  .class-section:first-child {
+    border-top: none;
+  }
+  .field { color: #303133; }
+  .field-type { color: #409eff; }
+  .method { color: #67c23a; }
+  .method-ret { color: #e6a23c; }
+  .visibility { color: #67c23a; margin-right: 2px; }
+
+  /* Relationships */
+  .relationships {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 16px 0;
+    flex-wrap: wrap;
+  }
+  .rel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    color: #606266;
+  }
+  .rel-arrow {
+    font-size: 14px;
+    color: #409eff;
+  }
+  .rel-dep { color: #909399; }
+  .rel-assoc { color: #409eff; }
+  .rel-impl { color: #67c23a; }
+
+  /* Legend */
+  .legend-row {
+    border-top: 1px solid #f0f0f0;
+    margin-top: 16px;
+    padding-top: 12px;
+    display: flex;
+    gap: 16px;
+    font-size: 11px;
+    color: #909399;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+<div class="diagram">
+  <div class="diagram-title">核心类型 & Store 结构</div>
+  <div class="diagram-sub">TypeScript 接口定义 + Pinia Store 设计</div>
+
+  <div class="class-grid">
+    <!-- UserStore -->
+    <div class="class-box store">
+      <div class="class-name">
+        «Pinia Store»<br>userStore
+      </div>
+      <div class="class-body">
+        <div class="class-section">
+          <div><span class="field">+ token</span>: <span class="field-type">Ref&lt;string&gt;</span></div>
+          <div><span class="field">+ userInfo</span>: <span class="field-type">Ref&lt;User | null&gt;</span></div>
+        </div>
+        <div class="class-section">
+          <div><span class="field">+ isLoggedIn</span>: <span class="field-type">Computed&lt;boolean&gt;</span></div>
+          <div><span class="field">+ isAdmin</span>: <span class="field-type">Computed&lt;boolean&gt;</span></div>
+        </div>
+        <div class="class-section">
+          <div><span class="method">+ setLoginInfo</span>(data: {token, user}): <span class="method-ret">void</span></div>
+          <div><span class="method">+ logout</span>(): <span class="method-ret">void</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- User -->
+    <div class="class-box type">
+      <div class="class-name">
+        «interface»<br>User
+      </div>
+      <div class="class-body">
+        <div class="class-section">
+          <div><span class="field">+ userId</span>: <span class="field-type">number</span></div>
+          <div><span class="field">+ username</span>: <span class="field-type">string</span></div>
+          <div><span class="field">+ phone</span>: <span class="field-type">string</span></div>
+          <div><span class="field">+ birthDate</span>?: <span class="field-type">string</span></div>
+          <div><span class="field">+ gender</span>?: <span class="field-type">'MALE' | 'FEMALE' | 'UNKNOWN'</span></div>
+          <div><span class="field">+ height</span>?: <span class="field-type">number</span></div>
+          <div><span class="field">+ role</span>: <span class="field-type">'USER' | 'ADMIN'</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ApiResponse -->
+    <div class="class-box iface">
+      <div class="class-name">
+        «interface»<br>ApiResponse&lt;T&gt;
+      </div>
+      <div class="class-body">
+        <div class="class-section">
+          <div><span class="field">+ code</span>: <span class="field-type">number</span></div>
+          <div><span class="field">+ message</span>: <span class="field-type">string</span></div>
+          <div><span class="field">+ data</span>: <span class="field-type">T</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LoginResponse -->
+    <div class="class-box type">
+      <div class="class-name">
+        «interface»<br>LoginResponse
+      </div>
+      <div class="class-body">
+        <div class="class-section">
+          <div><span class="field">+ token</span>: <span class="field-type">string</span></div>
+          <div><span class="field">+ user</span>: <span class="field-type">User</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AiProfileData -->
+    <div class="class-box type">
+      <div class="class-name">
+        «interface»<br>AiProfileData
+      </div>
+      <div class="class-body">
+        <div class="class-section">
+          <div><span class="field">+ profileId</span>: <span class="field-type">number</span></div>
+          <div><span class="field">+ healthTags</span>: <span class="field-type">string[]</span></div>
+          <div><span class="field">+ riskLevel</span>: <span class="field-type">'LOW' | 'MEDIUM' | 'HIGH'</span></div>
+          <div><span class="field">+ analysis</span>: <span class="field-type">string</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AiPlanData -->
+    <div class="class-box type">
+      <div class="class-name">
+        «interface»<br>AiPlanData
+      </div>
+      <div class="class-body">
+        <div class="class-section">
+          <div><span class="field">+ planId</span>: <span class="field-type">number</span></div>
+          <div><span class="field">+ planName</span>: <span class="field-type">string</span></div>
+          <div><span class="field">+ dietSuggest</span>: <span class="field-type">string</span></div>
+          <div><span class="field">+ sportSuggest</span>: <span class="field-type">string</span></div>
+          <div><span class="field">+ sleepSuggest</span>: <span class="field-type">string</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HealthRecord -->
+    <div class="class-box type">
+      <div class="class-name">
+        «interface»<br>HealthRecord
+      </div>
+      <div class="class-body">
+        <div class="class-section">
+          <div><span class="field">+ dataId</span>: <span class="field-type">number</span></div>
+          <div><span class="field">+ dataType</span>: <span class="field-type">string</span></div>
+          <div><span class="field">+ dataValue</span>: <span class="field-type">string</span></div>
+          <div><span class="field">+ unit</span>?: <span class="field-type">string</span></div>
+          <div><span class="field">+ recordTime</span>: <span class="field-type">string</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reminder -->
+    <div class="class-box type">
+      <div class="class-name">
+        «interface»<br>Reminder
+      </div>
+      <div class="class-body">
+        <div class="class-section">
+          <div><span class="field">+ reminderId</span>: <span class="field-type">number</span></div>
+          <div><span class="field">+ reminderType</span>: <span class="field-type">ReminderType</span></div>
+          <div><span class="field">+ reminderTime</span>: <span class="field-type">string</span></div>
+          <div><span class="field">+ status</span>: <span class="field-type">number</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PageData -->
+    <div class="class-box iface">
+      <div class="class-name">
+        «interface»<br>PageData&lt;T&gt;
+      </div>
+      <div class="class-body">
+        <div class="class-section">
+          <div><span class="field">+ items</span>: <span class="field-type">T[]</span></div>
+          <div><span class="field">+ page</span>: <span class="field-type">number</span></div>
+          <div><span class="field">+ size</span>: <span class="field-type">number</span></div>
+          <div><span class="field">+ total</span>: <span class="field-type">number</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Relationships -->
+  <div class="relationships">
+    <div class="rel">
+      <span class="rel-dep">userStore</span>
+      <span class="rel-arrow">───&gt;</span>
+      <span class="rel-dep">User</span>
+      <span style="font-size:10px;color:#909399">（使用）</span>
+    </div>
+    <div class="rel">
+      <span class="rel-dep">LoginResponse</span>
+      <span class="rel-arrow">───&gt;</span>
+      <span class="rel-dep">User</span>
+      <span style="font-size:10px;color:#909399">（包含）</span>
+    </div>
+    <div class="rel">
+      <span class="rel-dep">ApiResponse&lt;T&gt;</span>
+      <span class="rel-arrow">───&gt;</span>
+      <span class="rel-dep">所有 Data 类型</span>
+      <span style="font-size:10px;color:#909399">（泛型包装）</span>
+    </div>
+    <div class="rel">
+      <span class="rel-dep">PageData&lt;T&gt;</span>
+      <span class="rel-arrow">───&gt;</span>
+      <span class="rel-dep">T[]</span>
+      <span style="font-size:10px;color:#909399">（列表包装）</span>
+    </div>
+  </div>
+
+  <!-- API functions -->
+  <div style="border-top:1px solid #f0f0f0;margin-top:16px;padding-top:12px">
+    <div style="font-weight:700;font-size:13px;color:#303133;margin-bottom:8px">API 函数模块·职责映射</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;font-size:11px">
+      <span class="class-box api" style="min-width:auto">
+        <span class="class-name" style="padding:4px 10px;font-size:11px">auth.ts</span>
+        <span style="padding:4px 8px;display:block">login() · register()</span>
+      </span>
+      <span class="class-box api" style="min-width:auto">
+        <span class="class-name" style="padding:4px 10px;font-size:11px">user.ts</span>
+        <span style="padding:4px 8px;display:block">getCurrentUser() · updateProfile()</span>
+      </span>
+      <span class="class-box api" style="min-width:auto">
+        <span class="class-name" style="padding:4px 10px;font-size:11px">health.ts</span>
+        <span style="padding:4px 8px;display:block">getHealthRecords() · uploadHealthData() · deleteHealthData() · getHealthTrends() · importHealthData()</span>
+      </span>
+      <span class="class-box api" style="min-width:auto">
+        <span class="class-name" style="padding:4px 10px;font-size:11px">ai.ts</span>
+        <span style="padding:4px 8px;display:block">generateProfile() · generatePlan() · pushKnowledge()</span>
+      </span>
+      <span class="class-box api" style="min-width:auto">
+        <span class="class-name" style="padding:4px 10px;font-size:11px">reminder.ts</span>
+        <span style="padding:4px 8px;display:block">getReminders() · createReminder() · updateReminder() · toggleReminderStatus()</span>
+      </span>
+      <span class="class-box api" style="min-width:auto">
+        <span class="class-name" style="padding:4px 10px;font-size:11px">knowledge.ts</span>
+        <span style="padding:4px 8px;display:block">getKnowledgeList() · getMyPushes() · markPushRead()</span>
+      </span>
+      <span class="class-box api" style="min-width:auto">
+        <span class="class-name" style="padding:4px 10px;font-size:11px">admin.ts</span>
+        <span style="padding:4px 8px;display:block">getAdminUsers() · toggleUserStatus() · getLoginLogs() · getPlatformStatistics()</span>
+      </span>
+      <span class="class-box api" style="min-width:auto;border-color:#909399">
+        <span class="class-name" style="padding:4px 10px;font-size:11px;background:#909399">mock.ts</span>
+        <span style="padding:4px 8px;display:block">isMockEnabled() · mockSuccess() · mockPage() · 全部 Mock 数据</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="legend-row">
+    <span><span class="class-box store" style="min-width:auto;display:inline-block;vertical-align:middle"><span class="class-name" style="padding:2px 8px;font-size:10px">■</span></span> Pinia Store</span>
+    <span><span class="class-box iface" style="min-width:auto;display:inline-block;vertical-align:middle"><span class="class-name" style="padding:2px 8px;font-size:10px">■</span></span> 通用接口（泛型）</span>
+    <span><span class="class-box type" style="min-width:auto;display:inline-block;vertical-align:middle"><span class="class-name" style="padding:2px 8px;font-size:10px">■</span></span> 数据类型</span>
+    <span><span class="class-box api" style="min-width:auto;display:inline-block;vertical-align:middle"><span class="class-name" style="padding:2px 8px;font-size:10px">■</span></span> API 函数模块</span>
+  </div>
+</div>
+</body>
+</html>

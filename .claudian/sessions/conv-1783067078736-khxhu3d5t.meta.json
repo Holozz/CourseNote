@@ -1,0 +1,26 @@
+{
+  "id": "conv-1783067078736-khxhu3d5t",
+  "providerId": "claude",
+  "title": "Run Claude API command",
+  "titleGenerationStatus": "success",
+  "createdAt": 1783067078737,
+  "lastActivityAt": 1784621514804,
+  "sessionId": "e104c5e0-f1f2-4da8-8160-42ea02c30284",
+  "selectedModel": "claude-code/deepseek-v4-pro",
+  "providerState": {
+    "providerSessionId": "e104c5e0-f1f2-4da8-8160-42ea02c30284",
+    "previousProviderSessionIds": [
+      "80b95299-e1ba-44b7-bfd4-8d19035afcde"
+    ]
+  },
+  "usage": {
+    "model": "deepseek-v4-pro",
+    "inputTokens": 97,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 153984,
+    "contextWindow": 200000,
+    "contextTokens": 154081,
+    "percentage": 77,
+    "contextWindowIsAuthoritative": true
+  }
+}

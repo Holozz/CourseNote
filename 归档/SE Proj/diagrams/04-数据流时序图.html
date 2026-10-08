@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>数据流时序图</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #fff;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  .diagram {
+    width: 960px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 24px;
+  }
+  .diagram-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #303133;
+    margin-bottom: 20px;
+  }
+  .diagram-sub {
+    text-align: center;
+    font-size: 12px;
+    color: #909399;
+    margin-bottom: 24px;
+  }
+
+  .seq {
+    position: relative;
+    padding: 0 20px 0 120px;
+  }
+
+  /* Lifeline headers */
+  .lifelines {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+  }
+  .lifeline {
+    text-align: center;
+    width: 100px;
+  }
+  .lifeline-box {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .lifeline-sub {
+    font-size: 10px;
+    color: #909399;
+  }
+  .ll-user .lifeline-box { background: #303133; color: #fff; }
+  .ll-view .lifeline-box { background: #ecf5ff; color: #409eff; border: 1px solid #d9ecff; }
+  .ll-api .lifeline-box { background: #fdf6ec; color: #e6a23c; border: 1px solid #faecd8; }
+  .ll-be .lifeline-box { background: #fef0f0; color: #f56c6c; border: 1px solid #fde2e2; }
+  .ll-store .lifeline-box { background: #f0f9eb; color: #67c23a; border: 1px solid #e1f3d8; }
+  .ll-ls .lifeline-box { background: #e6f7f7; color: #14a3a3; border: 1px solid #ceeeee; }
+
+  /* Messages */
+  .msg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    margin: 2px 0;
+  }
+  .msg-label {
+    position: absolute;
+    left: -110px;
+    width: 100px;
+    text-align: right;
+    font-size: 11px;
+    color: #606266;
+    white-space: nowrap;
+  }
+  .msg-arrow {
+    position: absolute;
+    height: 1.5px;
+    background: #409eff;
+    top: 50%;
+  }
+  .msg-arrow::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: -3.5px;
+    width: 0; height: 0;
+    border-left: 6px solid #409eff;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+  }
+  .msg-arrow.return {
+    background: #c0c4cc;
+    border: none;
+    height: 1px;
+  }
+  .msg-arrow.return::after {
+    display: none;
+  }
+  .msg-arrow.return::before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -3.5px;
+    width: 0; height: 0;
+    border-right: 6px solid #c0c4cc;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+  }
+  .msg-text {
+    position: absolute;
+    top: -16px;
+    font-size: 11px;
+    color: #409eff;
+    white-space: nowrap;
+    background: #fff;
+    padding: 0 4px;
+  }
+  .msg-text.ret {
+    color: #909399;
+  }
+
+  /* Activation boxes */
+  .act-box {
+    border: 1px solid #409eff;
+    background: rgba(64,158,255,0.06);
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    width: 80px;
+    margin-left: -40px;
+    left: 50%;
+  }
+
+  /* Notes */
+  .note {
+    background: #fdf6ec;
+    border-left: 3px solid #e6a23c;
+    padding: 4px 10px;
+    margin: 8px 0;
+    font-size: 11px;
+    color: #b88230;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .legend {
+    border-top: 1px solid #f0f0f0;
+    margin-top: 16px;
+    padding-top: 12px;
+    display: flex;
+    gap: 20px;
+    font-size: 11px;
+    color: #909399;
+    justify-content: center;
+  }
+</style>
+</head>
+<body>
+<div class="diagram">
+  <div class="diagram-title">登录认证数据流 · 时序图</div>
+  <div class="diagram-sub">用户 → LoginView → auth.ts → request.ts → 后端 → userStore → localStorage</div>
+
+  <div class="seq">
+    <!-- Lifecycle headers -->
+    <div class="lifelines">
+      <div class="lifeline ll-user">
+        <div class="lifeline-box">用户</div>
+        <div class="lifeline-sub">Actor</div>
+      </div>
+      <div class="lifeline ll-view">
+        <div class="lifeline-box">LoginView</div>
+        <div class="lifeline-sub">Vue 组件</div>
+      </div>
+      <div class="lifeline ll-api">
+        <div class="lifeline-box">auth.ts</div>
+        <div class="lifeline-sub">API 函数</div>
+      </div>
+      <div class="lifeline ll-api" style="width:120px">
+        <div class="lifeline-box">request.ts</div>
+        <div class="lifeline-sub">Axios 拦截器</div>
+      </div>
+      <div class="lifeline ll-be">
+        <div class="lifeline-box">Spring Boot</div>
+        <div class="lifeline-sub">后端服务</div>
+      </div>
+      <div class="lifeline ll-store">
+        <div class="lifeline-box">userStore</div>
+        <div class="lifeline-sub">Pinia</div>
+      </div>
+      <div class="lifeline ll-ls">
+        <div class="lifeline-box">localStorage</div>
+        <div class="lifeline-sub">浏览器</div>
+      </div>
+    </div>
+
+    <!-- Step 1: User input -->
+    <div class="msg">
+      <span class="msg-label">输入手机号密码</span>
+      <span class="msg-text" style="left:calc(25% - 80px)">1. 点击登录按钮</span>
+    </div>
+
+    <!-- Step 2: Validate -->
+    <div class="msg">
+      <span class="msg-label">表单验证</span>
+      <span class="msg-text" style="left:calc(12% + 80px)">2. validate()</span>
+    </div>
+
+    <!-- Step 3: Call API -->
+    <div class="msg">
+      <span class="msg-label">调用登录函数</span>
+      <span class="msg-text" style="left:calc(25% + 40px)">3. login(phone, pwd)</span>
+    </div>
+
+    <!-- Step 4: Axios request -->
+    <div class="msg">
+      <span class="msg-label">发送 HTTP 请求</span>
+      <span class="msg-text" style="left:calc(40% + 40px)">4. POST /api/auth/login</span>
+    </div>
+
+    <div class="msg">
+      <span class="msg-label">附加 Authorization</span>
+      <span class="msg-text" style="left:calc(40% + 40px)">Bearer &#60;token&#62;</span>
+    </div>
+
+    <!-- Step 5: Backend processing -->
+    <div class="msg">
+      <span class="msg-label">验证账号密码</span>
+      <span class="msg-text" style="left:calc(60% + 20px)">5. 生成 JWT</span>
+    </div>
+
+    <!-- Step 6: Response -->
+    <div class="msg">
+      <span class="msg-label">返回响应</span>
+      <span class="msg-text ret" style="left:calc(52% + 40px)">6. { code:0, data:{token, user} }</span>
+    </div>
+
+    <div class="msg">
+      <span class="msg-label">响应拦截器检查</span>
+      <span class="msg-text ret" style="left:calc(40% + 40px)">code=0 → 通过</span>
+    </div>
+
+    <!-- Step 7: Return to view -->
+    <div class="msg">
+      <span class="msg-label">返回数据</span>
+      <span class="msg-text ret" style="left:calc(25% + 40px)">7. ApiResponse&#60;LoginResponse&#62;</span>
+    </div>
+
+    <!-- Step 8: Store login info -->
+    <div class="msg">
+      <span class="msg-label">写入 Store</span>
+      <span class="msg-text" style="left:calc(65% + 20px)">8. setLoginInfo(data)</span>
+    </div>
+
+    <!-- Step 9: Persist -->
+    <div class="msg">
+      <span class="msg-label">持久化 token</span>
+      <span class="msg-text" style="left:calc(78% + 20px)">9. setItem('token', ...)</span>
+    </div>
+    <div class="msg">
+      <span class="msg-label">持久化 userInfo</span>
+      <span class="msg-text ret" style="left:calc(78% + 20px)">setItem('userInfo', ...)</span>
+    </div>
+
+    <!-- Step 10: Navigate -->
+    <div class="msg">
+      <span class="msg-label">跳转首页</span>
+      <span class="msg-text" style="left:calc(12% + 80px)">10. router.push('/home')</span>
+    </div>
+
+    <div class="note">
+      ⚠️ Mock 模式：当 VITE_MOCK_AUTH=true 时，步骤 4-6 被跳过，auth.ts 直接返回模拟 token 和用户数据（延迟 300ms）
+    </div>
+  </div>
+
+  <div class="legend">
+    <span><span style="color:#409eff">━</span> 请求消息</span>
+    <span><span style="color:#c0c4cc">━</span> 返回消息</span>
+    <span>━━━ 参与者生命线</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "id": "conv-1781689773298-oehd3t8rh",
+  "providerId": "claude",
+  "title": "Generate STL and file system course notes",
+  "titleGenerationStatus": "success",
+  "createdAt": 1781689773298,
+  "lastActivityAt": 1781696542887,
+  "sessionId": null,
+  "providerState": {
+    "providerSessionId": "d4fe8c98-1b6b-4699-90e2-7e4bddf2dab1"
+  },
+  "modelRecoverySource": {
+    "sessionId": null,
+    "providerState": {
+      "providerSessionId": "d4fe8c98-1b6b-4699-90e2-7e4bddf2dab1"
+    }
+  },
+  "usage": {
+    "model": "deepseek-v4-pro",
+    "inputTokens": 23,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 173184,
+    "contextWindow": 200000,
+    "contextTokens": 173207,
+    "percentage": 87,
+    "contextWindowIsAuthoritative": true
+  }
+}
