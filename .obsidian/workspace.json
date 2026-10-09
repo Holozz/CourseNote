@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FA/Ch3 正则表达式（Regular Expressions）.md",
+                "file": "DIP/Proj Repo.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,31 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ch3 正则表达式（Regular Expressions）"
-            }
-          },
-          {
-            "id": "cadb82359331dc2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FA/AGENTS.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "AGENTS"
+              "title": "Proj Repo"
             }
           }
         ]
@@ -267,9 +243,9 @@
   },
   "active": "2640154437f0ef9e",
   "lastOpenFiles": [
+    "FA/Ch3 正则表达式（Regular Expressions）.md",
     "FA/Lecture_1_DFA.md",
     "FA/AGENTS.md",
-    "FA/Ch3 正则表达式（Regular Expressions）.md",
     "ML/AGENTS.md",
     "FA/Ch1 DFA.md",
     "README.md",
