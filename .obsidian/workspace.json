@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c73cff81ff6bc08e",
+        "id": "24b4563a26bdb2dc",
         "type": "tabs",
         "children": [
           {
-            "id": "bd26fb7c111b299b",
+            "id": "2640154437f0ef9e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DIP/Ch 4 频率域滤波.md",
+                "file": "FA/Ch3 正则表达式（Regular Expressions）.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ch 4 频率域滤波"
+              "title": "Ch3 正则表达式（Regular Expressions）"
+            }
+          },
+          {
+            "id": "cadb82359331dc2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "FA/AGENTS.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "AGENTS"
             }
           }
         ]
@@ -179,7 +203,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CN/Ch2 应用层.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -220,7 +243,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -242,27 +265,32 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bd26fb7c111b299b",
+  "active": "2640154437f0ef9e",
   "lastOpenFiles": [
+    "FA/Lecture_1_DFA.md",
+    "FA/AGENTS.md",
+    "FA/Ch3 正则表达式（Regular Expressions）.md",
+    "ML/AGENTS.md",
+    "FA/Ch1 DFA.md",
+    "README.md",
+    "index.md",
+    "log.md",
+    "LLM Wiki.md",
+    "DIP/Ch 4 频率域滤波.md",
     "CN/Hw2.md",
     "ML/Ch8 神经网络的训练与优化.md",
-    "DIP/Ch 4 频率域滤波.md",
     "ML/Source/Pasted image 20261007171731.png",
     "ML/Ch8 Supplement2 Transformer、GPT 与 BERT.md",
     "ML/HW1 Mini-Transformer 实验报告.md",
     "ML/Source/HW1-attn_cross.png",
     "ML/Source/HW1-attn_self.png",
     "ML/Source/HW1-curves.png",
-    "ML/AGENTS.md",
     "ML/Source/Ch8-Supplement2-img-o1-benchmark.png",
     "ML/Source/Ch8-Supplement2-img-ppo-grpo.png",
     "ML/Source/Ch8-Supplement2-img-rlhf.png",
     "ML/Source/Ch8-Supplement2-img-gpt-bert.png",
     "ML/Source/Ch8-Supplement2-img-bert-input.png",
     "ML/Source/Ch8-Supplement2-img-gpt-task-inputs.png",
-    "index.md",
-    "log.md",
-    "LLM Wiki.md",
     "AGENTS.md",
     "CLAUDE.md",
     "sedQbrz5c",
@@ -277,11 +305,7 @@
     "ML/Ch4 线性回归与分类的概率视角.md",
     "ML/Ch5 模型的非线性化、过拟合及正则化.md",
     "CN/Ch2 应用层.md",
-    "FA/Ch1 DFA.md",
     "DB/Ch4 Intermediate SQL.md",
-    "DB/hw4.md",
-    "DB/Ch3 Intro to Sql.md",
-    "DB/Ch6 数据库设计与E-R模型（E-R Model）.md",
     "Ch3 传输层返回 `HTTP",
     "ch3_raw.txt",
     "DB/_ch6_extract.txt",

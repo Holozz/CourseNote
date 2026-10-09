@@ -3,9 +3,9 @@
 > [!info] 索引说明
 > 本索引基于 [[LLM Wiki]] 方法论构建，按学科分类列出所有笔记文件。每个条目包含 Wiki-link、一句话摘要和核心主题。查询时先查此索引，再钻入具体页面。
 
-**最后更新**: 2026-10-07
-**涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络)
-**笔记总数**: 95
+**最后更新**: 2026-10-09
+**涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机)
+**笔记总数**: 98
 
 ---
 
@@ -228,6 +228,18 @@
 | 3 | [[CN/Ch3 传输层]] | 传输层服务与逻辑通信、多路复用/分解（UDP 二元组 vs TCP 四元组）、UDP（报文段结构、反码和检验和、伪首部、弱保护）、可靠数据传输原理（rdt1.0→3.0、GBN、SR 与窗口窘境、停等性能与流水线）、TCP（报文段结构、字节序号与累积确认、RTT 估计与超时、快速重传、流量控制 rwnd、三次握手/四次挥手、TIME_WAIT）、拥塞控制原理（三种情形与代价）、TCP 拥塞控制（AIMD、慢启动、ssthresh、快速恢复、CUBIC、BBR、ECN、公平性）；42 条易错点表 + 12 道高难例题 | transport layer, multiplexing/demultiplexing, UDP, checksum, one's complement, reliable data transfer, rdt, stop-and-wait, pipelining, GBN, selective repeat, sliding window, TCP, sequence number, cumulative ACK, RTT estimation, Karn's algorithm, fast retransmit, flow control, rwnd, three-way handshake, four-way teardown, TIME_WAIT, congestion control, AIMD, slow start, ssthresh, fast recovery, CUBIC, BBR, ECN, fairness |
 | 4 | [[CN/Lab1 IPv4]] | IPv4 地址与子网划分实验：地址分类、子网掩码、CIDR、分组转发与路由表 | IPv4, subnetting, subnet mask, CIDR, routing table |
 | 5 | [[CN/Lab2 路由器]] | 路由器实验（待补充） | router, lab |
+
+---
+
+## 📁 FA — 形式语言与自动机 (3 篇)
+
+> 形式语言与自动机基础：从 DFA 的状态记忆与语言接受出发，学习自动机的严格定义、构造与证明，并建立正则表达式和有限自动机的等价转换。
+
+| # | 笔记 | 摘要 | 核心主题 |
+|---|------|------|----------|
+| 1 | [[FA/Ch1 DFA]] | DFA 基础：字母表、字符串与语言，五元组与扩展转移函数，状态图/转移表、语言接受、构造技巧和等价证明 | DFA, alphabet, string, language, transition function, regular language |
+| 2 | [[FA/Lecture_1_DFA]] | Lecture 1 深入讲解：有限状态的记忆本质、DFA 三种表示、典型模式与余数自动机、双向包含证明及编程实现 | finite automaton, DFA design, state invariant, induction, divisibility automaton |
+| 3 | [[FA/Ch3 正则表达式（Regular Expressions）]] | 正则表达式的递归语义与模式构造，Thompson 法 RE→ε-NFA，GNFA 状态消除与 k-path 动态规划完成 DFA→RE，并含代数法则和 8 道例题 | regular expression, regular language, Thompson construction, epsilon-NFA, GNFA, state elimination, k-path |
 
 ---
 

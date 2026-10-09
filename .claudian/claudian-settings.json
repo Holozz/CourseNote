@@ -100,7 +100,7 @@
   "settingsProvider": "claude",
   "lastSelectedChatModel": {
     "providerId": "claude",
-    "model": "deepseek-v4-pro"
+    "model": "claude-code/deepseek-v4-flash"
   },
   "savedProviderModel": {
     "claude": "claude-code/deepseek-v4-pro"
