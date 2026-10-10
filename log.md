@@ -523,3 +523,21 @@
 **索引维护**：
 - [[index]]：补建「FA — 形式语言与自动机」分区，纳入项目内 3 篇课程笔记；涵盖学科新增 FA，总数按本次纳入增量 95 → 98，最后更新日期为 2026-10-09。
 - [[log]]：只追加本条记录，历史内容保留。
+
+
+---
+
+## [2026-10-10] ingest | 补全 DB Lec 6 实验报告
+
+**操作**：读取 `D:\Code\Course-DB\Lec6.sql`，参考 [[db Lab/Lec 3]]、[[db Lab/Lec 4]] 的写法，核对 [[db Lab/Lec 6]] 已粘贴的 12 张执行截图，只补充「三、实验结果」的对应代码与分析及「四、问题&总结」。封面、实验目的、实验内容、题目标题和图片引用保留。
+
+**更新报告**：
+- [[db Lab/Lec 6]]：补全 9 题，包含视图创建与查询、无检查选项时的插入、主键重复错误、视图中删除 0 行、通过连接视图加分和删除视图；按截图补入 `DISTINCT` 查询，区分 5,965 行与 5,961 行；问题总结保留 3 条简述。
+
+**验证**：核对全部 SQL 代码与截图，保留 12 个原有图片引用及其顺序、宽度；SQL 代码块闭合，前两节和封面字节不变。未执行 SQL 或修改数据库。
+
+**补充核对**：视图检查选项与更新限制参考 [CREATE VIEW](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-view-transact-sql?view=sql-server-ver17) 和 [Modify Data Through a View](https://learn.microsoft.com/en-us/sql/relational-databases/views/modify-data-through-a-view?view=sql-server-ver16)，报告分析以已有截图为执行依据。
+
+**索引维护**：
+- [[index]]：最后更新日期改为 2026-10-10，实验报告不纳入课程笔记索引，现有条目与数量保留。
+- [[log]]：只追加本条记录，历史内容保留。
