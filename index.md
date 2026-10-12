@@ -3,9 +3,9 @@
 > [!info] 索引说明
 > 本索引基于 [[LLM Wiki]] 方法论构建，按学科分类列出所有笔记文件。每个条目包含 Wiki-link、一句话摘要和核心主题。查询时先查此索引，再钻入具体页面。
 
-**最后更新**: 2026-10-10
+**最后更新**: 2026-10-12
 **涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机)
-**笔记总数**: 98
+**笔记总数**: 99
 
 ---
 
@@ -172,7 +172,7 @@
 
 ---
 
-## 📁 Algorithm — 算法与数据结构 (15 篇)
+## 📁 Algorithm — 算法与数据结构 (16 篇)
 
 > 算法与数据结构学习笔记，覆盖算法设计与分析基础、排序、图论、线性表、字符串与常用技巧。
 
@@ -193,6 +193,7 @@
 | 13 | [[C++ sort()函数]] | C++ STL sort 函数用法与原理 | STL sort, comparator |
 | 14 | [[Sequence List]] | 顺序表：动态数组实现与操作 | sequence list, dynamic array |
 | 15 | [[Linked List]] | 链表：单向/双向/循环链表及操作 | linked list, operations |
+| 16 | [[算法设计/Chapter 2 分治策略]] | 第 2 章全部 114 页：递归与分治分析、排序及逆序对、芯片测试、快速幂、整数三乘法与 Strassen、最近点对预排序、锦标赛与最坏线性选择、单位根求值及凸包；16 道例题 | divide and conquer, recursion, recurrence, merge sort, inversions, chip testing, quicksort, fast power, Strassen, closest pair, tournament, median of medians, FFT, convex hull |
 
 ---
 

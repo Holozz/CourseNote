@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "db Lab/Lec 6.md",
+                "file": "算法设计/Chapter 2 分治策略.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Lec 6"
+              "title": "Chapter 2 分治策略"
             }
           }
         ]
@@ -179,6 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "算法设计/Chapter 2 分治策略.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -219,7 +220,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -243,20 +244,24 @@
   },
   "active": "f5dcf3eef5824a9d",
   "lastOpenFiles": [
-    "db Lab/Source/Pasted image 20261010112439.png",
-    "db Lab/Source/Pasted image 20261010112011.png",
-    "db Lab/Source/Pasted image 20261010112006.png",
-    "db Lab/Source/Pasted image 20261010110735.png",
-    "db Lab/Source/Pasted image 20261010110716.png",
-    "db Lab/Source/Pasted image 20261010110145.png",
-    "db Lab/Source/Pasted image 20261010105448.png",
-    "db Lab/Source/Pasted image 20261010104934.png",
-    "db Lab/Source/Pasted image 20261010104314.png",
-    "db Lab/Source/Pasted image 20261010104254.png",
-    "db Lab/Source/Pasted image 20261010104251.png",
-    "db Lab/Lec 4.md",
-    "db Lab/Lec 6.md",
+    "ML/Ch7 神经网络.md",
+    "算法设计/Chapter 2 分治策略.md",
+    "算法设计/Source/Ch2-20261012-p112.png",
+    "算法设计/Source/Ch2-20261012-p99.png",
+    "算法设计/Source/Ch2-20261012-p96.png",
+    "算法设计/Source/Ch2-20261012-p71.png",
+    "算法设计/Source/Ch2-20261012-p68.png",
+    "算法设计/Source/Ch2-20261012-p44.png",
+    "算法设计/Source/Ch2-20261012-p35.png",
+    "算法设计/Source/Ch2-20261012-p27.png",
+    "算法设计/Source/Ch2-20261012-p18.png",
+    "ML/Ch8 神经网络的训练与优化.md",
     "DB/Ch6 数据库设计与E-R模型（E-R Model）.md",
+    "CN/Ch3 传输层.md",
+    "CN/Ch2 应用层.md",
+    "db Lab/Lec 6.md",
+    "db Lab/Source/Pasted image 20261010112439.png",
+    "db Lab/Lec 4.md",
     "DB/AGENTS.md",
     "DB/hw4.md",
     "DIP/Proj Repo.md",
@@ -271,17 +276,13 @@
     "LLM Wiki.md",
     "DIP/Ch 4 频率域滤波.md",
     "CN/Hw2.md",
-    "ML/Ch8 神经网络的训练与优化.md",
     "ML/Ch8 Supplement2 Transformer、GPT 与 BERT.md",
     "ML/HW1 Mini-Transformer 实验报告.md",
     "AGENTS.md",
     "CLAUDE.md",
     "sedQbrz5c",
     "AGENTS.md.tmp.36764.6e2a1e507e55",
-    "ML/Ch7 神经网络.md",
-    "DIP/report.md",
     "DIP/report.tex",
-    "DIP/未命名.md",
     "Ch3 传输层返回 `HTTP",
     "ch3_raw.txt",
     "DB/_ch6_extract.txt",

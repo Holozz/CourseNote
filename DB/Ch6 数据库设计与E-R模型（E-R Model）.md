@@ -460,12 +460,12 @@ advisor = (s_id, i_id)          -- 两端主键
 
 **严谨定义**（课件 P50、P54）：
 
-| | 特化（Specialization） | 概化（Generalization） |
-|---|---|---|
-| 方向 | **自顶向下**（top-down） | **自底向上**（bottom-up） |
-| 做法 | 在实体集内**指定子分组**，它们区别于集内其它实体 | 把**共享相同特征的多个实体集合并**成高层实体集 |
-| 结果 | 子分组成为**低层实体集**，拥有高层没有的属性/关系 | 产生**高层实体集** |
-| 关系 | 二者互为简单反转（simple inversions of each other），**E-R 图画法相同**，术语**可互换使用**（used interchangeably） | 同左 |
+|     | 特化（Specialization）                                                                        | 概化（Generalization）        |
+| --- | ----------------------------------------------------------------------------------------- | ------------------------- |
+| 方向  | **自顶向下**（top-down）                                                                        | **自底向上**（bottom-up）       |
+| 做法  | 在实体集内**指定子分组**，它们区别于集内其它实体                                                                | 把**共享相同特征的多个实体集合并**成高层实体集 |
+| 结果  | 子分组成为**低层实体集**，拥有高层没有的属性/关系                                                               | 产生**高层实体集**               |
+| 关系  | 二者互为简单反转（simple inversions of each other），**E-R 图画法相同**，术语**可互换使用**（used interchangeably） | 同左                        |
 
 - **ISA 三角**：用标 **ISA** 的三角形表示（如 instructor "is a" person）；
 - **属性继承（attribute inheritance）**：低层实体集**继承**它所连高层实体集的**全部属性与关系参与**（inherits all the attributes and relationship participation）。
