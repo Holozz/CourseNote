@@ -468,13 +468,13 @@ advisor = (s_id, i_id)          -- 两端主键
 | 关系  | 二者互为简单反转（simple inversions of each other），**E-R 图画法相同**，术语**可互换使用**（used interchangeably） | 同左                        |
 
 - **ISA 三角**：用标 **ISA** 的三角形表示（如 instructor "is a" person）；
-- **属性继承（attribute inheritance）**：低层实体集**继承**它所连高层实体集的**全部属性与关系参与**（inherits all the attributes and relationship participation）。
+- **属性继承（attribute inheritance）**：低层实体集**继承**它所连高层实体集的**全部属性与关系参与**（inherits all the attributes and relationship participation）
 
 **例子**（课件 P51）：
 
 - **重叠（Overlapping）**：`employee` 与 `student`——一个人可以既是员工又是学生；
 - **不相交（Disjoint）**：`instructor` 与 `secretary`——一个人不能同时是两者；
-- 还有 **total / partial** 之分（见 [[#6.3 完整性约束（total/partial）|6.3]]）。
+- 还有 **total / partial** 之分（见 [[#6.3 完整性约束（total/partial）|6.3]]）
 
 ### 6.2 特化的两种表示法与代价
 
@@ -581,21 +581,21 @@ proj_guide 的模式是冗余的（可删）
 
 **E-R 记号总结**（课件 P70–P71 的符号表，本节背诵重点）：
 
-| 元素 | 记号 |
-|---|---|
-| 实体集 | 矩形 |
-| 关系集 | 菱形 |
-| 属性 | 椭圆（列在实体内亦可） |
-| 主键属性 | 实线下划线 |
-| 弱实体集 | **双矩形** |
-| discriminator | **虚线下划线** |
-| 识别关系 | **双菱形** |
-| 派生属性 | 虚线椭圆 |
-| 多值属性 | 双线椭圆 |
-| 全参与 | **双线**（连线） |
-| 基数"一" | **箭头 →** |
-| ISA / 特化 | 三角形（标 ISA） |
-| total 完整性 | 关键字 `total` + 虚线连到空心箭头 |
+| 元素            | 记号                     |
+| ------------- | ---------------------- |
+| 实体集           | 矩形                     |
+| 关系集           | 菱形                     |
+| 属性            | 椭圆（列在实体内亦可）            |
+| 主键属性          | 实线下划线                  |
+| 弱实体集          | **双矩形**                |
+| discriminator | **虚线下划线**              |
+| 识别关系          | **双菱形**                |
+| 派生属性          | 虚线椭圆                   |
+| 多值属性          | 双线椭圆                   |
+| 全参与           | **双线**（连线）             |
+| 基数"一"         | **箭头 →**               |
+| ISA / 特化      | 三角形（标 ISA）             |
+| total 完整性     | 关键字 `total` + 虚线连到空心箭头 |
 
 **替代记号**（课件 P72–P73）：**Chen 记号**、**IDE1FX（Crows feet，鸟爪记号）** 等——同一套语义有多种画法，读图先认清用的哪套。
 

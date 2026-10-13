@@ -808,7 +808,7 @@ $$
 > [!info] 频谱的分布
 > 一幅自然图像的**绝大部分能量集中在频谱低频**（原点附近）。所以"低通"= 保留中心圆内的分量，丢弃圆外的分量，效果是**平滑/模糊**。
 
-三类滤波器：**理想（Ideal）、巴特沃斯（Butterworth）、高斯（Gaussian）**。它们都是**径向对称**的——只与到原点的距离 $D(u,v)$ 有关。
+三类滤波器：**理想（Ideal）、巴特沃斯（Butterworth）、高斯（Gaussian）**。它们都是**径向对称**的——只与到原点的距离 $D(u,v)$ 有关
 
 $$
 D(u,v)=\left[\left(u-\frac{M}{2}\right)^2+\left(v-\frac{N}{2}\right)^2\right]^{1/2}
@@ -1181,6 +1181,14 @@ DFT（反变换）会**自动把原函数做周期化处理**（周期长度 = �
 > 周期卷积 = 线性卷积的结果在周期 $P$ 下**首尾相接、折叠回绕**：
 > $$g_{\text{circ}}(x)=\sum_{k} g_{\text{linear}}(x+kP)$$
 > 于是本该出现在 $x\ge 400$ 的尾部数据"绕回"叠加到了 $x<10$ 的开头 ⇒ 开头多出误差、结尾数据丢失。
+
+>[!note]- 例题：循环卷积与线性卷积为什么不同？
+假设：$x=[1,2,3,4],\quad h=[1,1]$
+线性卷积的结果为：$x*h=[1,3,5,7,4]$
+但是，如果对 \(x\) 和 \(h\) 补齐至 4 点做 DFT、频域相乘并做 IDFT，就会得到：
+$x\circledast h=[5,3,5,7]$
+对比两个卷积结果
+![](data:image/svg+xml;charset=utf-8,%3Csvg%20font-family%3D%22%26quot%3BEras%20ITC%26quot%3B%2C%20-apple-system%2C%20BlinkMacSystemFont%2C%20%26quot%3BSegoe%20UI%26quot%3B%2C%20sans-serif%22%20font-weight%3D%22430%22%20data-d-component%3D%22svg%22%20fill%3D%22currentColor%22%20style%3D%22color%3Argb\(255%2C%20255%2C%20255\)%22%20viewBox%3D%220%200%20334%20166%22%20width%3D%22100%25%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctext%20x%3D%225%22%20y%3D%2216%22%20font-size%3D%2212%22%20fill%3D%22currentColor%22%3E%E7%BA%BF%E6%80%A7%E5%8D%B7%E7%A7%AF%3C%2Ftext%3E%3Ctext%20x%3D%225%22%20y%3D%2292%22%20font-size%3D%2212%22%20fill%3D%22currentColor%22%3E%E5%BE%AA%E7%8E%AF%E5%8D%B7%E7%A7%AF%3C%2Ftext%3E%3Crect%20x%3D%2220%22%20y%3D%2227%22%20width%3D%2248%22%20height%3D%2236%22%20rx%3D%225%22%20fill%3D%22%23E4A347%22%20fill-opacity%3D%22.20%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%2250%22%20font-size%3D%2217%22%20text-anchor%3D%22middle%22%20fill%3D%22currentColor%22%3E1%3C%2Ftext%3E%3Crect%20x%3D%2282%22%20y%3D%2227%22%20width%3D%2248%22%20height%3D%2236%22%20rx%3D%225%22%20fill%3D%22%238297A4%22%20fill-opacity%3D%22.20%22%2F%3E%3Ctext%20x%3D%22106%22%20y%3D%2250%22%20font-size%3D%2217%22%20text-anchor%3D%22middle%22%20fill%3D%22currentColor%22%3E3%3C%2Ftext%3E%3Crect%20x%3D%22144%22%20y%3D%2227%22%20width%3D%2248%22%20height%3D%2236%22%20rx%3D%225%22%20fill%3D%22%238297A4%22%20fill-opacity%3D%22.20%22%2F%3E%3Ctext%20x%3D%22168%22%20y%3D%2250%22%20font-size%3D%2217%22%20text-anchor%3D%22middle%22%20fill%3D%22currentColor%22%3E5%3C%2Ftext%3E%3Crect%20x%3D%22206%22%20y%3D%2227%22%20width%3D%2248%22%20height%3D%2236%22%20rx%3D%225%22%20fill%3D%22%238297A4%22%20fill-opacity%3D%22.20%22%2F%3E%3Ctext%20x%3D%22230%22%20y%3D%2250%22%20font-size%3D%2217%22%20text-anchor%3D%22middle%22%20fill%3D%22currentColor%22%3E7%3C%2Ftext%3E%3Crect%20x%3D%22268%22%20y%3D%2227%22%20width%3D%2248%22%20height%3D%2236%22%20rx%3D%225%22%20fill%3D%22%23E4A347%22%20fill-opacity%3D%22.20%22%2F%3E%3Ctext%20x%3D%22292%22%20y%3D%2250%22%20font-size%3D%2217%22%20text-anchor%3D%22middle%22%20fill%3D%22currentColor%22%3E4%3C%2Ftext%3E%3Crect%20x%3D%2220%22%20y%3D%22104%22%20width%3D%2248%22%20height%3D%2236%22%20rx%3D%225%22%20fill%3D%22%23E4A347%22%20fill-opacity%3D%22.20%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22127%22%20font-size%3D%2217%22%20text-anchor%3D%22middle%22%20fill%3D%22currentColor%22%3E5%3C%2Ftext%3E%3Crect%20x%3D%2282%22%20y%3D%22104%22%20width%3D%2248%22%20height%3D%2236%22%20rx%3D%225%22%20fill%3D%22%238297A4%22%20fill-opacity%3D%22.20%22%2F%3E%3Ctext%20x%3D%22106%22%20y%3D%22127%22%20font-size%3D%2217%22%20text-anchor%3D%22middle%22%20fill%3D%22currentColor%22%3E3%3C%2Ftext%3E%3Crect%20x%3D%22144%22%20y%3D%22104%22%20width%3D%2248%22%20height%3D%2236%22%20rx%3D%225%22%20fill%3D%22%238297A4%22%20fill-opacity%3D%22.20%22%2F%3E%3Ctext%20x%3D%22168%22%20y%3D%22127%22%20font-size%3D%2217%22%20text-anchor%3D%22middle%22%20fill%3D%22currentColor%22%3E5%3C%2Ftext%3E%3Crect%20x%3D%22206%22%20y%3D%22104%22%20width%3D%2248%22%20height%3D%2236%22%20rx%3D%225%22%20fill%3D%22%238297A4%22%20fill-opacity%3D%22.20%22%2F%3E%3Ctext%20x%3D%22230%22%20y%3D%22127%22%20font-size%3D%2217%22%20text-anchor%3D%22middle%22%20fill%3D%22currentColor%22%3E7%3C%2Ftext%3E%3Cpath%20d%3D%22M%20288%2066%20C%20300%2083%2036%2082%2044%20100%22%20stroke%3D%22%23D9983B%22%20stroke-width%3D%221.8%22%20stroke-dasharray%3D%224%203%22%20fill%3D%22none%22%2F%3E%3Ctext%20x%3D%22260%22%20y%3D%22158%22%20font-size%3D%2210%22%20fill%3D%22currentColor%22%20text-anchor%3D%22middle%22%3E%E6%9C%AB%E5%B0%BE%E5%80%BC%E5%9B%9E%E7%BB%95%E5%8F%A0%E5%8A%A0%E8%87%B3%E5%BC%80%E5%A4%B4%3C%2Ftext%3E%3C%2Fsvg%3E)
 
 **解决方法：零延拓（Padding）**
 

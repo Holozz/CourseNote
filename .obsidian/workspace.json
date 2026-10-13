@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "24b4563a26bdb2dc",
+        "id": "7c92eb8833b53922",
         "type": "tabs",
         "children": [
           {
-            "id": "f5dcf3eef5824a9d",
+            "id": "74ada0c85b5a2644",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "算法设计/Chapter 2 分治策略.md",
+                "file": "DB/hw6.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Chapter 2 分治策略"
+              "title": "hw6"
+            }
+          },
+          {
+            "id": "21c8d7245594a03b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DB/Ch6 数据库设计与E-R模型（E-R Model）.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Ch6 数据库设计与E-R模型（E-R Model）"
             }
           }
         ]
@@ -179,7 +203,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "算法设计/Chapter 2 分治策略.md",
+                "file": "DB/hw6.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -242,10 +266,21 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f5dcf3eef5824a9d",
+  "active": "74ada0c85b5a2644",
   "lastOpenFiles": [
-    "ML/Ch7 神经网络.md",
+    "DB/Ch6 数据库设计与E-R模型（E-R Model）.md",
+    "DB/hw6.md",
+    "DB/Source/1791882703031.jpg",
+    "DB/Ch5 Advanced SQL.md",
+    "CN/心得体会2.md",
+    "CN/Source/Pasted image 20261013125140.png",
+    "CN/Source/Pasted image 20261013125000.png",
+    "CN/心得体会1.md",
+    "CN/Lab2 路由器.md",
+    "CN/Lab1 IPv4.md",
+    "DIP/Ch 4 频率域滤波.md",
     "算法设计/Chapter 2 分治策略.md",
+    "ML/Ch7 神经网络.md",
     "算法设计/Source/Ch2-20261012-p112.png",
     "算法设计/Source/Ch2-20261012-p99.png",
     "算法设计/Source/Ch2-20261012-p96.png",
@@ -253,14 +288,10 @@
     "算法设计/Source/Ch2-20261012-p68.png",
     "算法设计/Source/Ch2-20261012-p44.png",
     "算法设计/Source/Ch2-20261012-p35.png",
-    "算法设计/Source/Ch2-20261012-p27.png",
-    "算法设计/Source/Ch2-20261012-p18.png",
     "ML/Ch8 神经网络的训练与优化.md",
-    "DB/Ch6 数据库设计与E-R模型（E-R Model）.md",
     "CN/Ch3 传输层.md",
     "CN/Ch2 应用层.md",
     "db Lab/Lec 6.md",
-    "db Lab/Source/Pasted image 20261010112439.png",
     "db Lab/Lec 4.md",
     "DB/AGENTS.md",
     "DB/hw4.md",
@@ -272,14 +303,6 @@
     "FA/Ch1 DFA.md",
     "README.md",
     "index.md",
-    "log.md",
-    "LLM Wiki.md",
-    "DIP/Ch 4 频率域滤波.md",
-    "CN/Hw2.md",
-    "ML/Ch8 Supplement2 Transformer、GPT 与 BERT.md",
-    "ML/HW1 Mini-Transformer 实验报告.md",
-    "AGENTS.md",
-    "CLAUDE.md",
     "sedQbrz5c",
     "AGENTS.md.tmp.36764.6e2a1e507e55",
     "DIP/report.tex",
