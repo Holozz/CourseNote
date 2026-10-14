@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "74ada0c85b5a2644",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB/hw6.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "hw6"
-            }
-          },
-          {
             "id": "21c8d7245594a03b",
             "type": "leaf",
             "state": {
@@ -54,8 +30,57 @@
               "icon": "lucide-file",
               "title": "Ch6 数据库设计与E-R模型（E-R Model）"
             }
+          },
+          {
+            "id": "41946bd671998dd8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "db Lab/Lec 7.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Lec 7"
+            }
+          },
+          {
+            "id": "83479e024d490811",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "db Lab/Lec 5.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Lec 5"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -266,32 +291,34 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "74ada0c85b5a2644",
+  "active": "41946bd671998dd8",
   "lastOpenFiles": [
+    "db Lab/Lec 5.md",
+    "db Lab/Lec 7.md",
+    "Pasted image 20261014115906.png",
+    "Pasted image 20261014115458.png",
+    "Pasted image 20261014115200.png",
+    "Pasted image 20261014114753.png",
+    "Pasted image 20261014114701.png",
+    "Pasted image 20261014114258.png",
+    "Pasted image 20261014113854.png",
+    "Pasted image 20261014113629.png",
+    "Pasted image 20261014113525.png",
+    "Pasted image 20261014113051.png",
+    "db Lab/Lec 6.md",
     "DB/Ch6 数据库设计与E-R模型（E-R Model）.md",
+    "DIP/Ch 4 频率域滤波.md",
     "DB/hw6.md",
-    "DB/Source/1791882703031.jpg",
     "DB/Ch5 Advanced SQL.md",
     "CN/心得体会2.md",
-    "CN/Source/Pasted image 20261013125140.png",
-    "CN/Source/Pasted image 20261013125000.png",
     "CN/心得体会1.md",
     "CN/Lab2 路由器.md",
     "CN/Lab1 IPv4.md",
-    "DIP/Ch 4 频率域滤波.md",
     "算法设计/Chapter 2 分治策略.md",
     "ML/Ch7 神经网络.md",
-    "算法设计/Source/Ch2-20261012-p112.png",
-    "算法设计/Source/Ch2-20261012-p99.png",
-    "算法设计/Source/Ch2-20261012-p96.png",
-    "算法设计/Source/Ch2-20261012-p71.png",
-    "算法设计/Source/Ch2-20261012-p68.png",
-    "算法设计/Source/Ch2-20261012-p44.png",
-    "算法设计/Source/Ch2-20261012-p35.png",
     "ML/Ch8 神经网络的训练与优化.md",
     "CN/Ch3 传输层.md",
     "CN/Ch2 应用层.md",
-    "db Lab/Lec 6.md",
     "db Lab/Lec 4.md",
     "DB/AGENTS.md",
     "DB/hw4.md",
@@ -301,8 +328,6 @@
     "FA/AGENTS.md",
     "ML/AGENTS.md",
     "FA/Ch1 DFA.md",
-    "README.md",
-    "index.md",
     "sedQbrz5c",
     "AGENTS.md.tmp.36764.6e2a1e507e55",
     "DIP/report.tex",

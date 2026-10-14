@@ -563,3 +563,41 @@
 **索引维护**：
 - [[index]]：保留「Algorithm — 算法与数据结构」分区所有既有条目，新增本章条目；分区 15 → 16 篇，总数按本次新增增量 98 → 99，最后更新为 2026-10-12。没有扫描其他学科或重算其历史数量。
 - [[log]]：只追加本条记录，历史字节完整保留。
+
+
+---
+
+## [2026-10-14] ingest | 补全 DB Lec 5 实验报告
+
+**操作**：读取 `D:\Code\Course-DB\Lec5.sql`，参考 [[db Lab/Lec 6]] 及本会话已读取的 Lec 3、Lec 4 报告风格，核对 [[db Lab/Lec 5]] 已粘贴的 11 张截图，只补全「三、实验结果」及「四、问题&总结」。
+
+**更新报告**：
+- [[db Lab/Lec 5]]：补充 SSMS 完整备份设置、三种备份的区别、插入和查询代码、还原设置、独占访问错误及还原前 51 行与还原后 50 行的对比；问题总结简写 3 条。
+- 截图只展示完整备份完成，未将差异备份、事务日志备份写成已执行成功；解决连接占用的方法作为处理建议，未臆造实际点击过程。
+
+**验证**：11 个截图引用、顺序与宽度全部保留，2 个 SQL 代码块闭合；封面及前两节字节保持原样，封面现有 `Lecture 7` 未擅自修改；未执行 SQL，未操作数据库或备份文件。
+
+**补充核对**：备份与还原机制参照 [备份和还原概述](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17) 和 [使用 SSMS 还原数据库](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-ver17)，实际执行结果以报告截图为准。
+
+**索引维护**：
+- [[index]]：最后更新日期改为 2026-10-14，实验报告不加入课程笔记索引，原有条目和数量保留。
+- [[log]]：只追加本条记录，历史内容保留。
+
+
+---
+
+## [2026-10-14] ingest | 补全 DB Lec 7 实验报告
+
+**操作**：读取 `D:\Code\Course-DB\Lec7.VLADI.sql`、`Lec7.user3.sql`，按用户说明将 `VLADI` 作为管理员连接，核对 [[db Lab/Lec 7]] 的 17 张截图，补全实验准备、8 道题的代码和结果分析，以及简短总结；本会话已有的 Lec 3、Lec 4、Lec 6 写法作为风格参考。
+
+**更新报告**：
+- [[db Lab/Lec 7]]：写清 Windows 管理员实际登录 `VLADI\50672` 与 USER1/USER2/USER3 普通用户连接、工资与成绩视图授权、权限传播和循环授权、PUBLIC 权限来源及收回、CASCADE 的作用及截图验证范围。
+- 保留用户原有账号切换问题和处理记录；区分初期未授权时的查询失败与后续 PUBLIC 授权；未将未测试的教师表循环授权级联回收写成实验结果。
+
+**验证**：17 个图片引用及其顺序、宽度保留，14 个 SQL 代码块闭合；封面、前两节和原有标题保持不变，用户已有总结文字保留。未执行 SQL 或修改数据库权限。
+
+**补充核对**：权限语义参照 [GRANT Object Permissions](https://learn.microsoft.com/en-us/sql/t-sql/statements/grant-object-permissions-transact-sql?view=sql-server-ver17) 和 [REVOKE](https://learn.microsoft.com/en-us/sql/t-sql/statements/revoke-transact-sql?view=sql-server-2017)，成功或失败以报告截图为依据。
+
+**索引维护**：
+- [[index]]：已有日期为 2026-10-14，本报告不纳入课程笔记索引，索引文件无需改写。
+- [[log]]：只追加本条记录，历史内容保留。
