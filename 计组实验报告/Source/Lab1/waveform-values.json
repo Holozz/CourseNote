@@ -1,0 +1,281 @@
+{
+  "load_interval_ps": [
+    2,
+    4
+  ],
+  "load_values": {
+    "clock": 0,
+    "reset": 0,
+    "instruction": 4235651,
+    "ex_aluop1_source": 0,
+    "ex_aluop2_source": 1,
+    "ex_immediate": 4,
+    "regs_reg1_read_address": 1,
+    "reg_write_enable": 1,
+    "reg_write_address": 3,
+    "wb_reg_write_source": 1,
+    "memory_read_enable": 1,
+    "memory_write_enable": 0
+  },
+  "fetch_first_changes": {
+    "clock": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        13,
+        1
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        15,
+        1
+      ],
+      [
+        16,
+        0
+      ],
+      [
+        17,
+        1
+      ],
+      [
+        18,
+        0
+      ],
+      [
+        19,
+        1
+      ],
+      [
+        20,
+        0
+      ],
+      [
+        21,
+        1
+      ],
+      [
+        22,
+        0
+      ],
+      [
+        23,
+        1
+      ],
+      [
+        24,
+        0
+      ],
+      [
+        25,
+        1
+      ],
+      [
+        26,
+        0
+      ]
+    ],
+    "reset": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "instruction_valid": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "jump_flag_id": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        22,
+        0
+      ],
+      [
+        24,
+        1
+      ],
+      [
+        26,
+        0
+      ]
+    ],
+    "jump_address_id": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        4096
+      ]
+    ],
+    "instruction_address": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        4096
+      ],
+      [
+        11,
+        4100
+      ],
+      [
+        13,
+        4104
+      ],
+      [
+        15,
+        4096
+      ],
+      [
+        23,
+        4100
+      ],
+      [
+        25,
+        4096
+      ]
+    ]
+  },
+  "fibonacci_instruction_valid_changes": [
+    [
+      0,
+      0
+    ],
+    [
+      283,
+      1
+    ]
+  ],
+  "fibonacci_store_time_ps": 22755,
+  "fibonacci_store_values": {
+    "clock": 1,
+    "cpu_clock": 0,
+    "instruction_valid": 1,
+    "instruction_address": 4624,
+    "instruction": 10494499,
+    "CPU memory address": 4,
+    "CPU write_data": 55,
+    "CPU write_enable": 1,
+    "write_strobe[0]": 1,
+    "write_strobe[1]": 1,
+    "write_strobe[2]": 1,
+    "write_strobe[3]": 1
+  },
+  "fibonacci_final_time_ps": 100003,
+  "fibonacci_final_values": {
+    "clock": 1,
+    "cpu_clock": 0,
+    "instruction_address": 4108,
+    "instruction": 111,
+    "CPU write_enable": 0,
+    "mem_debug_read_address": 4,
+    "mem_debug_read_data": 55
+  },
+  "fibonacci_debug_address_last_changes": [
+    [
+      96002,
+      192
+    ],
+    [
+      98002,
+      196
+    ],
+    [
+      100002,
+      4
+    ]
+  ],
+  "fibonacci_debug_data_last_changes": [
+    [
+      0,
+      0
+    ],
+    [
+      100003,
+      55
+    ]
+  ]
+}

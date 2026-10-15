@@ -1,0 +1,32 @@
+[info] welcome to sbt 1.9.6 (Oracle Corporation Java 17.0.12)
+[info] loading project definition from D:\Code\Scala\2025-fall-yatcpu-repo-main\lab1\project\project\project
+[info] loading settings for project lab1-build-build from metals.sbt ...
+[info] loading project definition from D:\Code\Scala\2025-fall-yatcpu-repo-main\lab1\project\project
+[info] loading settings for project lab1-build from metals.sbt,plugins.sbt ...
+[info] loading project definition from D:\Code\Scala\2025-fall-yatcpu-repo-main\lab1\project
+[info] loading settings for project root from build.sbt ...
+[info] set current project to yatcpu (in build file:/D:/Code/Scala/2025-fall-yatcpu-repo-main/lab1/)
+[info] InstructionDecoderTest:
+[info] ExecuteTest:
+[info] Exxecute of Single Cycle CPU
+[info] - should execute correctly
+[info] ByteAccessTest:
+[info] InstructionDecoder of Single Cycle CPU
+[info] - should produce correct control signal
+[info] Single Cycle CPU
+[info] - should store and load single byte
+[info] QuicksortTest:
+[info] Single Cycle CPU
+[info] - should quicksort 10 numbers
+[info] InstructionFetchTest:
+[info] InstructionFetch of Single Cycle CPU
+[info] - should fetch instruction
+[info] FibonacciTest:
+[info] Single Cycle CPU
+[info] - should calculate recursively fibonacci(10)
+[info] Run completed in 23 seconds, 676 milliseconds.
+[info] Total number of tests run: 6
+[info] Suites: completed 6, aborted 0
+[info] Tests: succeeded 6, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[success] Total time: 25 s, completed 2026年10月14日 下午8:52:37

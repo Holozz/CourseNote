@@ -3,9 +3,9 @@
 > [!info] 索引说明
 > 本索引基于 [[LLM Wiki]] 方法论构建，按学科分类列出所有笔记文件。每个条目包含 Wiki-link、一句话摘要和核心主题。查询时先查此索引，再钻入具体页面。
 
-**最后更新**: 2026-10-14
+**最后更新**: 2026-10-15
 **涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机)
-**笔记总数**: 99
+**笔记总数**: 100
 
 ---
 
@@ -129,15 +129,16 @@
 
 ---
 
-## 📁 DIP — 数字图像处理 (3 篇)
+## 📁 DIP — 数字图像处理 (4 篇)
 
-> 数字图像处理课程笔记（Gonzalez & Woods, *Digital Image Processing*），覆盖数字图像基础与像素关系、灰度变换与空间滤波、频率域滤波（傅里叶变换、取样定理、DFT/FFT、低通/高通/同态滤波）。
+> 数字图像处理课程笔记（Gonzalez & Woods, *Digital Image Processing*），覆盖数字图像基础与像素关系、灰度变换与空间滤波、频率域滤波（傅里叶变换、取样定理、DFT/FFT、低通/高通/同态滤波）、图像复原（噪声模型、空间滤波复原、自适应滤波、频域去卷积）。
 
 | # | 笔记 | 摘要 | 核心主题 |
 |---|------|------|----------|
 | 1 | [[Ch 2]] | 数字图像基础：灰度分辨率与动态范围、饱和度与对比度、图像内插（最近邻/双线性）、像素间基本关系（4/8/m 邻接、连通、区域、距离测度）与基本数学工具 | grayscale resolution, dynamic range, interpolation, adjacency, distance measures |
 | 2 | [[Ch 3 灰度变换与空间滤波]] | 空间域增强全流程：基本灰度变换（负片/对数/幂次/分段线性/灰度切割/位图切割）、直方图均衡化与匹配、局部直方图增强、平滑滤波（均值/高斯/中值）、锐化滤波（拉普拉斯/非锐化掩模/Sobel），7 道例题 | histogram equalization, histogram matching, convolution vs correlation, median filter, Laplacian, Sobel, gamma correction |
 | 3 | [[Ch 4 频率域滤波]] | 频域滤波完整体系：傅里叶级数与变换、冲激与取样定理、混叠、2D DFT 及其性质（可分/平移/旋转/周期/共轭对称）、频谱中心化、频域滤波六步法、ILPF/BLPF/GLPF 与 IHPF/BHPF/GHPF、频域拉普拉斯、高频提升/加强、同态滤波、零延拓与缠绕误差、FFT，17 道例题 | Fourier transform, sampling theorem, aliasing, DFT, spectrum centering, BLPF, GLPF, high-boost filtering, homomorphic filter, zero padding, FFT |
+| 4 | [[Ch 5 图像复原]] | 图像复原完整体系：复原 vs 增强（客观/主观）、退化模型 $g=h*f+\eta$、六种噪声 PDF（高斯/瑞利/伽马/指数/均匀/脉冲）与白噪声、噪声参数估计、空间滤波复原（算术/几何/谐波/逆谐波均值、中值/最大/最小/中点/修正阿尔法均值）、自适应滤波器（局部噪声消除、自适应中值 Level A/B）、周期噪声带阻与陷波、退化函数估计与逆滤波/维纳/约束最小二乘方/几何均值，13 道例题 | image restoration, noise model, Rayleigh PDF, salt-and-pepper, arithmetic/geometric/harmonic/inverse-harmonic mean, alpha-trimmed mean, adaptive median, bandreject filter, notch filter, inverse filtering, Wiener filter, constrained least squares |
 
 ---
 
