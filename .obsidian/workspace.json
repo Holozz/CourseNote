@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7c92eb8833b53922",
+        "id": "63c6cd2fd1be2c7c",
         "type": "tabs",
         "children": [
           {
-            "id": "41946bd671998dd8",
+            "id": "f30adb6060e599b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器.md",
+                "file": "数理逻辑/Chapter 4 命题逻辑自然演绎系统的可靠性和完备性.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,31 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Chapter 5 命题逻辑范式和 SAT 求解器"
-            }
-          },
-          {
-            "id": "4fe525f68d061a60",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "数理逻辑/AGENTS.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "AGENTS"
+              "title": "Chapter 4 命题逻辑自然演绎系统的可靠性和完备性"
             }
           }
         ]
@@ -138,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a4c20e317a755670",
@@ -203,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器.md",
+                "file": "数理逻辑/Chapter 4 命题逻辑自然演绎系统的可靠性和完备性.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -226,30 +201,28 @@
             "id": "80ad5b085e842cc8",
             "type": "leaf",
             "state": {
-              "type": "claudian-view",
-              "state": {
-                "tabWorkspace": {
-                  "version": 1,
-                  "openTabs": [
-                    {
-                      "tabId": "tab-1781097989034-walfxmw",
-                      "conversationId": "conv-1783067078736-khxhu3d5t"
-                    }
-                  ],
-                  "activeTabId": "tab-1781097989034-walfxmw"
-                }
-              },
-              "icon": "bot",
-              "title": "Claudian"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          },
+          {
+            "id": "1b45e4b8a2906b7c",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 258.0714111328125,
-    "collapsed": true
+    "width": 298.928466796875
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -258,19 +231,22 @@
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "realclaudian:Open Claudian": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "templater-obsidian:Templater": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templates:插入模板": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "41946bd671998dd8",
+  "active": "f30adb6060e599b3",
   "lastOpenFiles": [
+    "数理逻辑/Chapter 3 命题逻辑自然演绎系统.md",
+    "数理逻辑/Chapter 4 命题逻辑自然演绎系统的可靠性和完备性.md",
+    "数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器.md",
     "数理逻辑/AGENTS.md",
     "FA/Ch2 NFA 与 ε-NFA.md",
-    "数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器.md",
     "FA/Ch3 正则表达式（Regular Expressions）.md",
     "FA/Lecture_1_DFA.md",
     "FA/Ch1 DFA.md",
@@ -312,8 +288,6 @@
     "CN/Lab1 IPv4.md",
     "算法设计/Chapter 2 分治策略.md",
     "ML/Ch7 神经网络.md",
-    "ML/Ch8 神经网络的训练与优化.md",
-    "CN/Ch2 应用层.md",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
