@@ -3,9 +3,9 @@
 > [!info] 索引说明
 > 本索引基于 [[LLM Wiki]] 方法论构建，按学科分类列出所有笔记文件。每个条目包含 Wiki-link、一句话摘要和核心主题。查询时先查此索引，再钻入具体页面。
 
-**最后更新**: 2026-10-15
+**最后更新**: 2026-10-16
 **涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机)
-**笔记总数**: 100
+**笔记总数**: 101
 
 ---
 
@@ -233,15 +233,16 @@
 
 ---
 
-## 📁 FA — 形式语言与自动机 (3 篇)
+## 📁 FA — 形式语言与自动机 (4 篇)
 
-> 形式语言与自动机基础：从 DFA 的状态记忆与语言接受出发，学习自动机的严格定义、构造与证明，并建立正则表达式和有限自动机的等价转换。
+> 形式语言与自动机基础：DFA、NFA 与 ε-NFA 的定义、状态设计和语言接受，子集构造、ε-闭包与等价性证明，以及正则表达式和有限自动机的双向转换。
 
 | # | 笔记 | 摘要 | 核心主题 |
 |---|------|------|----------|
 | 1 | [[FA/Ch1 DFA]] | DFA 基础：字母表、字符串与语言，五元组与扩展转移函数，状态图/转移表、语言接受、构造技巧和等价证明 | DFA, alphabet, string, language, transition function, regular language |
 | 2 | [[FA/Lecture_1_DFA]] | Lecture 1 深入讲解：有限状态的记忆本质、DFA 三种表示、典型模式与余数自动机、双向包含证明及编程实现 | finite automaton, DFA design, state invariant, induction, divisibility automaton |
-| 3 | [[FA/Ch3 正则表达式（Regular Expressions）]] | 正则表达式的递归语义与模式构造，Thompson 法 RE→ε-NFA，GNFA 状态消除与 k-path 动态规划完成 DFA→RE，并含代数法则和 8 道例题 | regular expression, regular language, Thompson construction, epsilon-NFA, GNFA, state elimination, k-path |
+| 3 | [[FA/Ch2 NFA 与 ε-NFA]] | 第二章全部 38 页：非确定性接受语义、棋盘 NFA 与完整子集构造、归纳等价证明、ε-闭包与扩展转移、前置闭包消除 ε 及接受状态修正、两条确定化路线；10 道自拟例题与速查表 | NFA, epsilon-NFA, subset construction, epsilon closure, extended transition, equivalence proof, state complexity |
+| 4 | [[FA/Ch3 正则表达式（Regular Expressions）]] | 正则表达式的递归语义与模式构造，Thompson 法 RE→ε-NFA，GNFA 状态消除与 k-path 动态规划完成 DFA→RE，并含代数法则和 8 道例题 | regular expression, regular language, Thompson construction, epsilon-NFA, GNFA, state elimination, k-path |
 
 ---
 

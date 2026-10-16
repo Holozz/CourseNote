@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DIP/Ch 5 图像复原.md",
+                "file": "FA/Ch3 正则表达式（Regular Expressions）.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ch 5 图像复原"
+              "title": "Ch3 正则表达式（Regular Expressions）"
             }
           },
           {
-            "id": "999f83c3cb0c9ceb",
+            "id": "4fe525f68d061a60",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DIP/Ch 4 频率域滤波.md",
+                "file": "FA/Ch2 NFA 与 ε-NFA.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,10 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ch 4 频率域滤波"
+              "title": "Ch2 NFA 与 ε-NFA"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -203,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DB/hw6.md",
+                "file": "FA/Ch2 NFA 与 ε-NFA.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -266,10 +267,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "41946bd671998dd8",
+  "active": "4fe525f68d061a60",
   "lastOpenFiles": [
-    "DIP/Ch5 图像复原.md",
+    "FA/Ch3 正则表达式（Regular Expressions）.md",
+    "FA/Ch2 NFA 与 ε-NFA.md",
+    "FA/Lecture_1_DFA.md",
+    "FA/Ch1 DFA.md",
     "DIP/Ch 5 图像复原.md",
+    "DIP/Ch5 图像复原.md",
     "DIP/Ch 4 频率域滤波.md",
     "_ch5_code_check.py",
     "_ch5img/s31.png",
@@ -310,9 +315,6 @@
     "CN/Ch2 应用层.md",
     "db Lab/Lec 4.md",
     "DB/AGENTS.md",
-    "DB/hw4.md",
-    "DIP/Proj Repo.md",
-    "FA/Ch3 正则表达式（Regular Expressions）.md",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
