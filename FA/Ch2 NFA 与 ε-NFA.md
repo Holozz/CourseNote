@@ -653,28 +653,12 @@ $$
 \hat{\delta}_E:Q\times\Sigma^*\to 2^Q
 $$
 
-要允许读字符之前、字符之间以及全部字符之后的 ε 路径。
+要允许读字符之前、字符之间以及全部字符之后的 ε 路径
 
-基础情形：
+- 基础情形：$\boxed{\hat{\delta}_E(q,\varepsilon)=\operatorname{CL}(q)}.$
 
-$$
-\boxed{
-\hat{\delta}_E(q,\varepsilon)=\operatorname{CL}(q)
-}.
-$$
+- 归纳情形：设 $x\in\Sigma^*$、$a\in\Sigma$，则$\boxed{\hat{\delta}_E(q,xa)=\operatorname{CL}\left(\bigcup_{p\in\hat{\delta}_E(q,x)}\delta_E(p,a)\right)}.$，先把每个当前候选状态的 $a$ 后继取并，再对结果做 ε-闭包
 
-归纳情形：设 $x\in\Sigma^*$、$a\in\Sigma$，则
-
-$$
-\boxed{
-\hat{\delta}_E(q,xa)
-=\operatorname{CL}\left(
-\bigcup_{p\in\hat{\delta}_E(q,x)}\delta_E(p,a)
-\right)
-}.
-$$
-
-先把每个当前候选状态的 $a$ 后继取并，再对结果做 ε-闭包。
 
 初始集合已经闭合，每读完一个字符又再次闭合，所以每个前缀对应的集合始终为 ε-闭合集合。字符前的 ε 路径已经包含在当前集合中，无需重复写出。
 

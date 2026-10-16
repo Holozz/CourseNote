@@ -4,8 +4,8 @@
 > 本索引基于 [[LLM Wiki]] 方法论构建，按学科分类列出所有笔记文件。每个条目包含 Wiki-link、一句话摘要和核心主题。查询时先查此索引，再钻入具体页面。
 
 **最后更新**: 2026-10-16
-**涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机)
-**笔记总数**: 101
+**涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机) · 数理逻辑
+**笔记总数**: 102
 
 ---
 
@@ -243,6 +243,16 @@
 | 2 | [[FA/Lecture_1_DFA]] | Lecture 1 深入讲解：有限状态的记忆本质、DFA 三种表示、典型模式与余数自动机、双向包含证明及编程实现 | finite automaton, DFA design, state invariant, induction, divisibility automaton |
 | 3 | [[FA/Ch2 NFA 与 ε-NFA]] | 第二章全部 38 页：非确定性接受语义、棋盘 NFA 与完整子集构造、归纳等价证明、ε-闭包与扩展转移、前置闭包消除 ε 及接受状态修正、两条确定化路线；10 道自拟例题与速查表 | NFA, epsilon-NFA, subset construction, epsilon closure, extended transition, equivalence proof, state complexity |
 | 4 | [[FA/Ch3 正则表达式（Regular Expressions）]] | 正则表达式的递归语义与模式构造，Thompson 法 RE→ε-NFA，GNFA 状态消除与 k-path 动态规划完成 DFA→RE，并含代数法则和 8 道例题 | regular expression, regular language, Thompson construction, epsilon-NFA, GNFA, state elimination, k-path |
+
+---
+
+## 📁 数理逻辑 (1 篇)
+
+> 命题逻辑课程笔记，涵盖公式范式、可满足性判定、Horn 逻辑与 SAT 求解及建模。
+
+| # | 笔记 | 摘要 | 核心主题 |
+|---|------|------|----------|
+| 1 | [[数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器]] | 第五讲全部 36 页：NNF/CNF/DNF 的定义、等值转换与存在性证明，主范式与完整真值表，Horn 标记算法及正确性和线性实现条件，SAT 与 P/NP，DPLL、GSAT 和 N 皇后完整编码；7 道补充或展开例题 | normal form, CNF, DNF, NNF, minterm, maxterm, Horn-SAT, least model, NP-completeness, DPLL, GSAT, N-queens |
 
 ---
 

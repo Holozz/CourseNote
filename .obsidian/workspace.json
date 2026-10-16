@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FA/Ch3 正则表达式（Regular Expressions）.md",
+                "file": "数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ch3 正则表达式（Regular Expressions）"
+              "title": "Chapter 5 命题逻辑范式和 SAT 求解器"
             }
           },
           {
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FA/Ch2 NFA 与 ε-NFA.md",
+                "file": "数理逻辑/AGENTS.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +52,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ch2 NFA 与 ε-NFA"
+              "title": "AGENTS"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -204,7 +203,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "FA/Ch2 NFA 与 ε-NFA.md",
+                "file": "数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -267,10 +266,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "4fe525f68d061a60",
+  "active": "41946bd671998dd8",
   "lastOpenFiles": [
-    "FA/Ch3 正则表达式（Regular Expressions）.md",
+    "数理逻辑/AGENTS.md",
     "FA/Ch2 NFA 与 ε-NFA.md",
+    "数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器.md",
+    "FA/Ch3 正则表达式（Regular Expressions）.md",
     "FA/Lecture_1_DFA.md",
     "FA/Ch1 DFA.md",
     "DIP/Ch 5 图像复原.md",
@@ -313,8 +314,6 @@
     "ML/Ch7 神经网络.md",
     "ML/Ch8 神经网络的训练与优化.md",
     "CN/Ch2 应用层.md",
-    "db Lab/Lec 4.md",
-    "DB/AGENTS.md",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
