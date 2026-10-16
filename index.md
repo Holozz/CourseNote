@@ -5,7 +5,7 @@
 
 **最后更新**: 2026-10-16
 **涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机) · 数理逻辑
-**笔记总数**: 104
+**笔记总数**: 105
 
 ---
 
@@ -246,15 +246,16 @@
 
 ---
 
-## 📁 数理逻辑 (3 篇)
+## 📁 数理逻辑 (4 篇)
 
-> 命题逻辑课程笔记，涵盖自然演绎、可靠性与完备性证明，以及公式范式、Horn 逻辑和 SAT 求解与建模.
+> 命题逻辑课程笔记，涵盖语法与语义、真值函数和联结词完备集、自然演绎及其可靠性与完备性，以及公式范式、Horn 逻辑和 SAT 求解与建模.
 
 | # | 笔记 | 摘要 | 核心主题 |
 |---|------|------|----------|
-| 1 | [[数理逻辑/Chapter 3 命题逻辑自然演绎系统]] | 第三讲全部 28 页：语法与语义、全部基本规则、方框及假设解除，5 项导出规则证明、4 道课件例题、2 道练习及 5 个反模型；推导逐行注明作用域 | natural deduction, inference rule, assumption discharge, proof scope, MT, PBC, LEM, DS, countermodel |
-| 2 | [[数理逻辑/Chapter 4 命题逻辑自然演绎系统的可靠性和完备性]] | 第四讲全部 35 页：两类归纳、无子证明与一般可靠性、逐行上下文、真值赋值引理、消除文字假设和有限前提完备性；补全合取情形并说明无穷前提范围 | soundness, completeness, strong induction, structural induction, proof context, truth assignment lemma, finite premises |
-| 3 | [[数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器]] | 第五讲全部 36 页：NNF/CNF/DNF 的定义、等值转换与存在性证明，主范式与完整真值表，Horn 标记算法及正确性和线性实现条件，SAT 与 P/NP，DPLL、GSAT 和 N 皇后完整编码；7 道补充或展开例题 | normal form, CNF, DNF, NNF, minterm, maxterm, Horn-SAT, least model, NP-completeness, DPLL, GSAT, N-queens |
+| 1 | [[数理逻辑/Chapter 2 命题逻辑的语法与语义]] | 第二讲全部 31 页：递归语法与最小性、语法树、结构归纳、权重与唯一可读性、子公式计数、语义和后承、等值置换、全部一元与二元函数、完备集与不变量反证；6 道补充例题 | syntax, semantics, structural induction, unique readability, subformula, logical equivalence, entailment, truth function, functional completeness, NOR |
+| 2 | [[数理逻辑/Chapter 3 命题逻辑自然演绎系统]] | 第三讲全部 28 页：语法与语义、全部基本规则、方框及假设解除，5 项导出规则证明、4 道课件例题、2 道练习及 5 个反模型；推导逐行注明作用域 | natural deduction, inference rule, assumption discharge, proof scope, MT, PBC, LEM, DS, countermodel |
+| 3 | [[数理逻辑/Chapter 4 命题逻辑自然演绎系统的可靠性和完备性]] | 第四讲全部 35 页：两类归纳、无子证明与一般可靠性、逐行上下文、真值赋值引理、消除文字假设和有限前提完备性；补全合取情形并说明无穷前提范围 | soundness, completeness, strong induction, structural induction, proof context, truth assignment lemma, finite premises |
+| 4 | [[数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器]] | 第五讲全部 36 页：NNF/CNF/DNF 的定义、等值转换与存在性证明，主范式与完整真值表，Horn 标记算法及正确性和线性实现条件，SAT 与 P/NP，DPLL、GSAT 和 N 皇后完整编码；7 道补充或展开例题 | normal form, CNF, DNF, NNF, minterm, maxterm, Horn-SAT, least model, NP-completeness, DPLL, GSAT, N-queens |
 
 ---
 

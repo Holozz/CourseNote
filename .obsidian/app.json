@@ -11,5 +11,6 @@
   "readableLineLength": false,
   "alwaysUpdateLinks": true,
   "settingsPopoutWindow": true,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "vimMode": false
 }
