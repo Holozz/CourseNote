@@ -153,13 +153,13 @@ tags:
 
 ### 4.1 合取与析取引入
 
-| 规则 | 输入 | 输出 | 条件与意义 |
-|---|---|---|---|
-| $\land i$ | $\varphi$，$\psi$ | $\varphi\land\psi$ | 两个分量均已得到 |
-| $\land e_1$ | $\varphi\land\psi$ | $\varphi$ | 提取左分量 |
-| $\land e_2$ | $\varphi\land\psi$ | $\psi$ | 提取右分量 |
-| $\lor i_1$ | $\varphi$ | $\varphi\lor\psi$ | 不要求另行证明 $\psi$ |
-| $\lor i_2$ | $\psi$ | $\varphi\lor\psi$ | 不要求另行证明 $\varphi$ |
+| 规则          | 输入                 | 输出                 | 条件与意义             |
+| ----------- | ------------------ | ------------------ | ----------------- |
+| $\land i$   | $\varphi$，$\psi$   | $\varphi\land\psi$ | 两个分量均已得到          |
+| $\land e_1$ | $\varphi\land\psi$ | $\varphi$          | 提取左分量             |
+| $\land e_2$ | $\varphi\land\psi$ | $\psi$             | 提取右分量             |
+| $\lor i_1$  | $\varphi$          | $\varphi\lor\psi$  | 不要求另行证明 $\psi$    |
+| $\lor i_2$  | $\psi$             | $\varphi\lor\psi$  | 不要求另行证明 $\varphi$ |
 
 下标表示保留或引入的位置. 从 $p\lor q$ 不能用 $\land e$ 得到 $p$：主联结词不匹配，而且 $p=0,q=1$ 就构成反例.
 
