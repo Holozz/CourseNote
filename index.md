@@ -154,7 +154,7 @@
 | 4 | [[Ch4 Intermediate SQL]] | 中级 SQL 七块：连接表达式（natural/using/on、left/right/full 外连接）、视图（定义/展开/物化/更新）、事务、完整性约束（外键/级联/断言/延迟检查）、数据类型与域、索引、授权（GRANT/REVOKE/角色/视图授权），13 道例题 | join, view, transaction, integrity constraint, index, authorization, role |
 | 5 | [[Ch5 Advanced SQL]] | 高级 SQL 五大块：从程序访问 SQL（JDBC/SQLJ/ODBC/游标、SQL 注入与 PreparedStatement、元数据）、函数与存储过程、触发器（行级/语句级/风险）、递归查询（传递闭包与不动点）、高级聚合与 OLAP（排名族、窗口框架、CUBE/ROLLUP/GROUPING、MOLAP/ROLAP/HOLAP），13 道例题 | JDBC, SQL injection, cursor, trigger, recursive query, window function, CUBE, ROLLUP, OLAP |
 | 6 | [[Ch6 数据库设计与E-R模型（E-R Model）]] | 数据库设计与 E-R 模型：设计三阶段与两大陷阱、E-R 基本元素（实体/关系/属性四类）、约束（映射基数、参与、l..h、三元箭头）、主键与弱实体集、E-R→关系模式转换（复合/多值属性、冗余消除）、扩展特性（特化/概化、完整性约束、聚合）、设计问题与 E-R/UML 记号，12 道例题 | E-R model, entity set, relationship, cardinality, weak entity, specialization, aggregation, UML |
-| 7 | [[Ch7 规范化（Normalization）]] | 规范化：1NF、函数依赖与候选键、无损连接与依赖保持、闭包与正则覆盖、BCNF 分解与 3NF 综合及正确性证明、多值依赖与 4NF、设计取舍与时态数据，8 道详细例题 | normalization, functional dependency, lossless join, dependency preservation, BCNF, 3NF, canonical cover, MVD, 4NF, temporal data |
+| 7 | [[Ch7 规范化（Normalization）]] | 从教师与院系冗余引出规范化，按直觉—定义—手算串联函数依赖、键与闭包、无损与依赖保持、BCNF/3NF、正则覆盖和分解算法，展开 3NF 正确性证明、MVD/4NF 与时态设计，12 道详细例题 | normalization, functional dependency, attribute closure, lossless join, dependency preservation, BCNF, 3NF, canonical cover, MVD, 4NF, temporal data |
 
 ---
 

@@ -694,13 +694,14 @@ foreign key (dept_name) references department (dept_name)  -- 显式指定被引
 
 **通俗理解**：父表的一行要被删除/修改，子表里引用它的行怎么办？四种策略（课件 P39）：
 
-| 动作 | 语义 | 例子（`course` 引用 `department`） |
-|---|---|---|
-| **默认：拒绝（reject）** | 违反约束的操作**直接被拒** | 还有课挂在 Biology 系 → 不许删 Biology 系 |
-| `on delete cascade` | 父行删除时**连带删掉**所有引用它的子行 | 删 Biology → 该系所有课程一并删除 |
-| `on update cascade` | 父键更新时**子行跟着改** | 系改名 Biology → Biology→Bio，课表同步改 |
-| `on delete set null` | 子行的 FK 列**置 NULL** | 删 Biology → 这些课的 `dept_name` 变 NULL |
-| `on delete set default` | 子行 FK 列**置为预设默认值** | 删 Biology → 课程归到默认系 |
+| 动作                      | 语义                    | 例子（`course` 引用 `department`）        |
+| ----------------------- | --------------------- | ----------------------------------- |
+| **默认：拒绝（reject）**       | 违反约束的操作**直接被拒**       | 还有课挂在 Biology 系 → 不许删 Biology 系     |
+| `on delete cascade`     | 父行删除时**连带删掉**所有引用它的子行 | 删 Biology → 该系所有课程一并删除              |
+| `on update cascade`     | 父键更新时**子行跟着改**        | 系改名 Biology → Biology→Bio，课表同步改     |
+| `on delete set null`    | 子行的 FK 列**置 NULL**    | 删 Biology → 这些课的 `dept_name` 变 NULL |
+| `on delete set default` | 子行 FK 列**置为预设默认值**    | 删 Biology → 课程归到默认系                 |
+|                         |                       |                                     |
 
 ```sql
 create table course (
