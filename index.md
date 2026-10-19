@@ -3,9 +3,9 @@
 > [!info] 索引说明
 > 本索引基于 [[LLM Wiki]] 方法论构建，按学科分类列出所有笔记文件。每个条目包含 Wiki-link、一句话摘要和核心主题。查询时先查此索引，再钻入具体页面。
 
-**最后更新**: 2026-10-16
-**涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机) · 数理逻辑
-**笔记总数**: 105
+**最后更新**: 2026-10-19
+**涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机) · 数理逻辑 · 最优化理论
+**笔记总数**: 110
 
 ---
 
@@ -256,6 +256,20 @@
 | 2 | [[数理逻辑/Chapter 3 命题逻辑自然演绎系统]] | 第三讲全部 28 页：语法与语义、全部基本规则、方框及假设解除，5 项导出规则证明、4 道课件例题、2 道练习及 5 个反模型；推导逐行注明作用域 | natural deduction, inference rule, assumption discharge, proof scope, MT, PBC, LEM, DS, countermodel |
 | 3 | [[数理逻辑/Chapter 4 命题逻辑自然演绎系统的可靠性和完备性]] | 第四讲全部 35 页：两类归纳、无子证明与一般可靠性、逐行上下文、真值赋值引理、消除文字假设和有限前提完备性；补全合取情形并说明无穷前提范围 | soundness, completeness, strong induction, structural induction, proof context, truth assignment lemma, finite premises |
 | 4 | [[数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器]] | 第五讲全部 36 页：NNF/CNF/DNF 的定义、等值转换与存在性证明，主范式与完整真值表，Horn 标记算法及正确性和线性实现条件，SAT 与 P/NP，DPLL、GSAT 和 N 皇后完整编码；7 道补充或展开例题 | normal form, CNF, DNF, NNF, minterm, maxterm, Horn-SAT, least model, NP-completeness, DPLL, GSAT, N-queens |
+
+---
+
+## 📁 最优化理论 (5 篇)
+
+> 按授课课件逐次整理最优化理论，分别维护每次课的定义、证明、习题与材料覆盖.
+
+| # | 笔记 | 摘要 | 核心主题 |
+|---|------|------|----------|
+| 1 | [[最优化理论/第 1 次课 绪论与基础知识]] | 2026-09-07 课件全部 27 页：四类建模案例、向量与矩阵范数、不等式证明、梯度与 Hessian、Taylor 展开及优化基本概念，含 6 道补充例题 | optimization modeling, norm, least squares, RPCA, gradient, Hessian, Taylor expansion, local and global optimum |
+| 2 | [[最优化理论/第 2 次课 算法评价、收敛速度与凸集]] | 2026-09-14 课件全部 21 页：迭代框架、Q/R 收敛及反例、复杂度、凸集/仿射集/凸锥与三种包、超平面/半空间/范数球，含全部三页习题及思考题解析 | convergence, Q-convergence, R-convergence, complexity, convex set, affine set, convex cone, convex hull, hyperplane, norm ball |
+| 3 | [[最优化理论/第 3 次课 凸集的保凸运算与凸函数]] | 2026-09-21 课件全部 16 页：范数球与椭球、多面体与单纯形、矩阵凸锥、交集和仿射像/逆像等保凸运算；凸/严格凸/强凸与凹性定义，含四页习题、核心证明及两处勘误 | ellipsoid, simplex, positive semidefinite cone, affine image, preimage, convex function, strict convexity, strong convexity |
+| 4 | [[最优化理论/第 4 次课 凸函数的一阶与二阶条件]] | 2026-09-28 课件全部 8 页：正无穷扩展与示性函数、凸/严格凸/凹/强凸的一阶条件、驻点最优性与梯度单调性、Hessian 判据及二次函数分类；补足证明、域条件及反例，含 4 道例题解析 | extended-real function, indicator function, first-order condition, gradient monotonicity, Hessian, strong convexity, quadratic function |
+| 5 | [[最优化理论/第 5 次课 常见凸函数、保凸运算与共轭函数]] | 2026-10-12 课件全部 27 页：幂函数、负对数与熵、范数、最大值及 log-sum-exp、负对数行列式；加权和/仿射/上确界/单调复合、共轭三例与次水平集，含全部三页习题及边界辨析 | log-sum-exp, log determinant, convexity-preserving operations, composition, conjugate function, sublevel set |
 
 ---
 

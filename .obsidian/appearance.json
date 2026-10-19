@@ -10,5 +10,6 @@
   "enabledCssSnippets": [
     "cover",
     "report-cover"
-  ]
+  ],
+  "showRibbon": true
 }

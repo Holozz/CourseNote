@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "63c6cd2fd1be2c7c",
+        "id": "b5cbc6e020dc055d",
         "type": "tabs",
         "children": [
           {
-            "id": "f30adb6060e599b3",
+            "id": "66a2c815a5f12084",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数理逻辑/Chapter 4 命题逻辑自然演绎系统的可靠性和完备性.md",
+                "file": "最优化理论/第 4 次课 凸函数的一阶与二阶条件.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Chapter 4 命题逻辑自然演绎系统的可靠性和完备性"
+              "title": "第 4 次课 凸函数的一阶与二阶条件"
             }
           },
           {
-            "id": "7e4f9da162d384cf",
+            "id": "436037a1306e700c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数理逻辑/Chapter 3 命题逻辑自然演绎系统.md",
+                "file": "最优化理论/第 5 次课 常见凸函数、保凸运算与共轭函数.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,35 +52,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Chapter 3 命题逻辑自然演绎系统"
-            }
-          },
-          {
-            "id": "3c17c911b97459f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "数理逻辑/Chapter 2 命题逻辑的语法与语义.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Chapter 2 命题逻辑的语法与语义"
+              "title": "第 5 次课 常见凸函数、保凸运算与共轭函数"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -290,31 +265,41 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e4f9da162d384cf",
+  "active": "66a2c815a5f12084",
   "lastOpenFiles": [
-    "数理逻辑/Chapter 2 命题逻辑的语法与语义.md",
-    "数理逻辑/Chapter 3 命题逻辑自然演绎系统.md",
-    "数理逻辑/Chapter 4 命题逻辑自然演绎系统的可靠性和完备性.md",
+    "最优化理论/第 3 次课 凸集的保凸运算与凸函数.md",
+    "最优化理论/第 2 次课 算法评价、收敛速度与凸集.md",
+    "最优化理论/第 5 次课 常见凸函数、保凸运算与共轭函数.md",
+    "CN/Source/Pasted image 20261019080913.png",
+    "最优化理论/第 1 次课 绪论与基础知识.md",
+    "最优化理论/Source/第5次课_逐点最大示意.png",
+    "最优化理论/Source/第5次课_绝对值幂函数示意.png",
+    "最优化理论/Source/第4次课_凸函数一阶支撑示意.png",
+    "最优化理论/第 4 次课 凸函数的一阶与二阶条件.md",
+    "最优化理论/Source/第3次课_凸函数弦线示意.png",
+    "最优化理论/Source/第3次课_单纯形维数示意.png",
+    "CN/Ch3 传输层.md",
+    "最优化理论/Chapter 1 绪论与基础知识.md",
+    "最优化理论/Source/Chapter1_第二次课_不同p的单位球.png",
+    "最优化理论/Source/Chapter1_第二次课_凸包与凸锥包.png",
+    "最优化理论/Source/Chapter1_第一次课_视频前景背景分离.png",
+    "最优化理论/Source",
+    "最优化理论/AGENTS.md",
+    "CN/Source/Pasted image 20261019093746.png",
+    "DIP/Ch 4 频率域滤波.md",
+    "DIP/Ch 5 图像复原.md",
     "数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器.md",
+    "SomeStuff/G30-CP.md",
+    "数理逻辑/Chapter 4 命题逻辑自然演绎系统的可靠性和完备性.md",
+    "数理逻辑/Chapter 3 命题逻辑自然演绎系统.md",
+    "数理逻辑/Chapter 2 命题逻辑的语法与语义.md",
     "数理逻辑/AGENTS.md",
     "FA/Ch2 NFA 与 ε-NFA.md",
     "FA/Ch3 正则表达式（Regular Expressions）.md",
     "FA/Lecture_1_DFA.md",
     "FA/Ch1 DFA.md",
-    "DIP/Ch 5 图像复原.md",
     "DIP/Ch5 图像复原.md",
-    "DIP/Ch 4 频率域滤波.md",
     "_ch5_code_check.py",
-    "_ch5img/s31.png",
-    "_ch5img/s28.png",
-    "_ch5img/s22.png",
-    "_ch5img/s21.png",
-    "_ch5img/s05hi.png",
-    "_ch5img/s30.png",
-    "_ch5img/s25.png",
-    "_ch5img/s24.png",
-    "_ch5img/s20.png",
-    "_ch5img/s19.png",
     "_ch5img",
     "_ch5_raw.txt",
     "p3.txt",
@@ -324,20 +309,9 @@
     "计组实验报告/Lab1.md",
     "计组实验报告/Source/Lab1/test-results.log",
     "计组实验报告/Source/Lab1/waveform-values.json",
-    "计组实验报告/Source/Lab1",
     "计组实验报告/Lab1-实验报告.md",
-    "CN/Ch3 传输层.md",
     "db Lab/Lec 7.md",
     "db Lab/Lec 5.md",
-    "db Lab/Lec 6.md",
-    "DB/Ch6 数据库设计与E-R模型（E-R Model）.md",
-    "DB/hw6.md",
-    "DB/Ch5 Advanced SQL.md",
-    "CN/心得体会2.md",
-    "CN/心得体会1.md",
-    "CN/Lab2 路由器.md",
-    "CN/Lab1 IPv4.md",
-    "算法设计/Chapter 2 分治策略.md",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
