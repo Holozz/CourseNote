@@ -5,7 +5,7 @@
 
 **最后更新**: 2026-10-19
 **涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机) · 数理逻辑 · 最优化理论
-**笔记总数**: 110
+**笔记总数**: 112
 
 ---
 
@@ -142,9 +142,9 @@
 
 ---
 
-## 📁 DB — 数据库原理 (5 篇)
+## 📁 DB — 数据库原理 (7 篇)
 
-> 数据库系统原理课程笔记（Database System Concepts 7th Ed.），覆盖数据库概述、关系模型与关系代数、SQL 基础 → 中级 SQL（连接/视图/事务/完整性约束/授权）→ 高级 SQL（JDBC/函数/触发器/递归/OLAP）→ 数据库设计与 E-R 模型。
+> 数据库系统原理课程笔记（Database System Concepts 7th Ed.），覆盖数据库概述、关系模型与关系代数、SQL 基础 → 中级 SQL（连接/视图/事务/完整性约束/授权）→ 高级 SQL（JDBC/函数/触发器/递归/OLAP）→ 数据库设计与 E-R 模型 → 规范化与依赖理论。
 
 | # | 笔记 | 摘要 | 核心主题 |
 |---|------|------|----------|
@@ -154,6 +154,7 @@
 | 4 | [[Ch4 Intermediate SQL]] | 中级 SQL 七块：连接表达式（natural/using/on、left/right/full 外连接）、视图（定义/展开/物化/更新）、事务、完整性约束（外键/级联/断言/延迟检查）、数据类型与域、索引、授权（GRANT/REVOKE/角色/视图授权），13 道例题 | join, view, transaction, integrity constraint, index, authorization, role |
 | 5 | [[Ch5 Advanced SQL]] | 高级 SQL 五大块：从程序访问 SQL（JDBC/SQLJ/ODBC/游标、SQL 注入与 PreparedStatement、元数据）、函数与存储过程、触发器（行级/语句级/风险）、递归查询（传递闭包与不动点）、高级聚合与 OLAP（排名族、窗口框架、CUBE/ROLLUP/GROUPING、MOLAP/ROLAP/HOLAP），13 道例题 | JDBC, SQL injection, cursor, trigger, recursive query, window function, CUBE, ROLLUP, OLAP |
 | 6 | [[Ch6 数据库设计与E-R模型（E-R Model）]] | 数据库设计与 E-R 模型：设计三阶段与两大陷阱、E-R 基本元素（实体/关系/属性四类）、约束（映射基数、参与、l..h、三元箭头）、主键与弱实体集、E-R→关系模式转换（复合/多值属性、冗余消除）、扩展特性（特化/概化、完整性约束、聚合）、设计问题与 E-R/UML 记号，12 道例题 | E-R model, entity set, relationship, cardinality, weak entity, specialization, aggregation, UML |
+| 7 | [[Ch7 规范化（Normalization）]] | 规范化：1NF、函数依赖与候选键、无损连接与依赖保持、闭包与正则覆盖、BCNF 分解与 3NF 综合及正确性证明、多值依赖与 4NF、设计取舍与时态数据，8 道详细例题 | normalization, functional dependency, lossless join, dependency preservation, BCNF, 3NF, canonical cover, MVD, 4NF, temporal data |
 
 ---
 
@@ -259,7 +260,7 @@
 
 ---
 
-## 📁 最优化理论 (5 篇)
+## 📁 最优化理论 (6 篇)
 
 > 按授课课件逐次整理最优化理论，分别维护每次课的定义、证明、习题与材料覆盖.
 
@@ -270,6 +271,7 @@
 | 3 | [[最优化理论/第 3 次课 凸集的保凸运算与凸函数]] | 2026-09-21 课件全部 16 页：范数球与椭球、多面体与单纯形、矩阵凸锥、交集和仿射像/逆像等保凸运算；凸/严格凸/强凸与凹性定义，含四页习题、核心证明及两处勘误 | ellipsoid, simplex, positive semidefinite cone, affine image, preimage, convex function, strict convexity, strong convexity |
 | 4 | [[最优化理论/第 4 次课 凸函数的一阶与二阶条件]] | 2026-09-28 课件全部 8 页：正无穷扩展与示性函数、凸/严格凸/凹/强凸的一阶条件、驻点最优性与梯度单调性、Hessian 判据及二次函数分类；补足证明、域条件及反例，含 4 道例题解析 | extended-real function, indicator function, first-order condition, gradient monotonicity, Hessian, strong convexity, quadratic function |
 | 5 | [[最优化理论/第 5 次课 常见凸函数、保凸运算与共轭函数]] | 2026-10-12 课件全部 27 页：幂函数、负对数与熵、范数、最大值及 log-sum-exp、负对数行列式；加权和/仿射/上确界/单调复合、共轭三例与次水平集，含全部三页习题及边界辨析 | log-sum-exp, log determinant, convexity-preserving operations, composition, conjugate function, sublevel set |
+| 6 | [[最优化理论/第 6 次课 凸优化问题、最优性条件与典型模型]] | 2026-10-19 课件全部 23 页：域与解集、凸优化局部/全局性质、可行方向与变分不等式、等式/非负约束最优性、LP 标准化及 QP/QCQP、投资组合均值—方差建模；7 节详细例题与思考题解析，修正价格因子等条件 | convex optimization, feasible direction, variational inequality, complementarity, LP standard form, QP, QCQP, mean-variance model |
 
 ---
 

@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "66a2c815a5f12084",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "最优化理论/第 4 次课 凸函数的一阶与二阶条件.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "第 4 次课 凸函数的一阶与二阶条件"
-            }
-          },
-          {
             "id": "436037a1306e700c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "最优化理论/第 5 次课 常见凸函数、保凸运算与共轭函数.md",
+                "file": "DB/Ch7 规范化（Normalization）.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "第 5 次课 常见凸函数、保凸运算与共轭函数"
+              "title": "Ch7 规范化（Normalization）"
             }
           }
         ]
@@ -265,27 +241,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "66a2c815a5f12084",
+  "active": "436037a1306e700c",
   "lastOpenFiles": [
+    "DB/Ch6 数据库设计与E-R模型（E-R Model）.md",
+    "DB/Ch7 规范化（Normalization）.md",
+    "最优化理论/Source/第6次课_凸约束最优性几何示意.png",
+    "最优化理论/Source/第6次课_优化解集关系示意.png",
+    "最优化理论/第 6 次课 凸优化问题、最优性条件与典型模型.md",
+    "最优化理论/第 5 次课 常见凸函数、保凸运算与共轭函数.md",
+    "最优化理论/第 4 次课 凸函数的一阶与二阶条件.md",
     "最优化理论/第 3 次课 凸集的保凸运算与凸函数.md",
     "最优化理论/第 2 次课 算法评价、收敛速度与凸集.md",
-    "最优化理论/第 5 次课 常见凸函数、保凸运算与共轭函数.md",
     "CN/Source/Pasted image 20261019080913.png",
     "最优化理论/第 1 次课 绪论与基础知识.md",
     "最优化理论/Source/第5次课_逐点最大示意.png",
     "最优化理论/Source/第5次课_绝对值幂函数示意.png",
     "最优化理论/Source/第4次课_凸函数一阶支撑示意.png",
-    "最优化理论/第 4 次课 凸函数的一阶与二阶条件.md",
     "最优化理论/Source/第3次课_凸函数弦线示意.png",
     "最优化理论/Source/第3次课_单纯形维数示意.png",
     "CN/Ch3 传输层.md",
     "最优化理论/Chapter 1 绪论与基础知识.md",
     "最优化理论/Source/Chapter1_第二次课_不同p的单位球.png",
     "最优化理论/Source/Chapter1_第二次课_凸包与凸锥包.png",
-    "最优化理论/Source/Chapter1_第一次课_视频前景背景分离.png",
     "最优化理论/Source",
     "最优化理论/AGENTS.md",
-    "CN/Source/Pasted image 20261019093746.png",
     "DIP/Ch 4 频率域滤波.md",
     "DIP/Ch 5 图像复原.md",
     "数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器.md",
@@ -310,8 +289,6 @@
     "计组实验报告/Source/Lab1/test-results.log",
     "计组实验报告/Source/Lab1/waveform-values.json",
     "计组实验报告/Lab1-实验报告.md",
-    "db Lab/Lec 7.md",
-    "db Lab/Lec 5.md",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
