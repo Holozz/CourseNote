@@ -3,9 +3,9 @@
 > [!info] 索引说明
 > 本索引基于 [[LLM Wiki]] 方法论构建，按学科分类列出所有笔记文件。每个条目包含 Wiki-link、一句话摘要和核心主题。查询时先查此索引，再钻入具体页面。
 
-**最后更新**: 2026-10-19
+**最后更新**: 2026-10-21
 **涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机) · 数理逻辑 · 最优化理论
-**笔记总数**: 112
+**笔记总数**: 114
 
 ---
 
@@ -174,7 +174,7 @@
 
 ---
 
-## 📁 Algorithm — 算法与数据结构 (16 篇)
+## 📁 Algorithm — 算法与数据结构 (17 篇)
 
 > 算法与数据结构学习笔记，覆盖算法设计与分析基础、排序、图论、线性表、字符串与常用技巧。
 
@@ -196,6 +196,8 @@
 | 14 | [[Sequence List]] | 顺序表：动态数组实现与操作 | sequence list, dynamic array |
 | 15 | [[Linked List]] | 链表：单向/双向/循环链表及操作 | linked list, operations |
 | 16 | [[算法设计/Chapter 2 分治策略]] | 第 2 章全部 114 页：递归与分治分析、排序及逆序对、芯片测试、快速幂、整数三乘法与 Strassen、最近点对预排序、锦标赛与最坏线性选择、单位根求值及凸包；16 道例题 | divide and conquer, recursion, recurrence, merge sort, inversions, chip testing, quicksort, fast power, Strassen, closest pair, tournament, median of medians, FFT, convex hull |
+| 17 | [[算法设计/Chapter 3 动态规划]] | 从共享路线引出状态与最优性，按手算、递推、证明、恢复贯通矩阵链、投资、背包、LCS、压缩、最大子段和、RNA、编辑距离及最优检索树；完整覆盖 125 页，含 14 道解析例题 | dynamic programming, state design, optimal substructure, memoization, matrix chain, Catalan, knapsack, LCS, image compression, maximum subarray, RNA, edit distance, optimal BST |
+
 
 ---
 
@@ -220,17 +222,18 @@
 
 ---
 
-## 📁 CN — 计算机网络 (5 篇)
+## 📁 CN — 计算机网络 (6 篇)
 
-> 计算机网络（Kurose & Ross 自顶向下方法）：从应用层到传输层，覆盖协议原理、套接字编程与实验。
+> 计算机网络（Kurose & Ross 自顶向下方法）：从应用层、传输层到网络层数据平面，覆盖协议原理、路由器工作机制、套接字编程与实验。
 
 | # | 笔记 | 摘要 | 核心主题 |
 |---|------|------|----------|
 | 1 | [[CN/Ch1 简介]] | 网络构成（主机/交换机/链路）、网络边缘与网络核心、分组交换 vs 电路交换（转发/路由）、性能四时延与流量强度、吞吐量与瓶颈链路、五层协议栈 | network edge/core, packet switching, circuit switching, forwarding vs routing, delay, traffic intensity, throughput, bottleneck link, protocol layering |
 | 2 | [[CN/Ch2 应用层]] | 应用体系结构（C/S vs P2P）、进程与套接字、HTTP（持续/非持续连接、报文格式、状态码、Cookie、Web 缓存、HTTP/1.1→3）、SMTP/IMAP、DNS（层次结构、资源记录、迭代 vs 递归）、P2P（BitTorrent 一报还一报）、CDN 与 DASH、UDP/TCP 套接字编程 | application architecture, socket, HTTP, persistent connection, cookie, web cache, conditional GET, SMTP, IMAP, DNS, resource record, P2P, BitTorrent, tit-for-tat, CDN, DASH, socket programming |
 | 3 | [[CN/Ch3 传输层]] | 传输层服务与逻辑通信、多路复用/分解（UDP 二元组 vs TCP 四元组）、UDP（报文段结构、反码和检验和、伪首部、弱保护）、可靠数据传输原理（rdt1.0→3.0、GBN、SR 与窗口窘境、停等性能与流水线）、TCP（报文段结构、字节序号与累积确认、RTT 估计与超时、快速重传、流量控制 rwnd、三次握手/四次挥手、TIME_WAIT）、拥塞控制原理（三种情形与代价）、TCP 拥塞控制（AIMD、慢启动、ssthresh、快速恢复、CUBIC、BBR、ECN、公平性）；42 条易错点表 + 12 道高难例题 | transport layer, multiplexing/demultiplexing, UDP, checksum, one's complement, reliable data transfer, rdt, stop-and-wait, pipelining, GBN, selective repeat, sliding window, TCP, sequence number, cumulative ACK, RTT estimation, Karn's algorithm, fast retransmit, flow control, rwnd, three-way handshake, four-way teardown, TIME_WAIT, congestion control, AIMD, slow start, ssthresh, fast recovery, CUBIC, BBR, ECN, fairness |
-| 4 | [[CN/Lab1 IPv4]] | IPv4 地址与子网划分实验：地址分类、子网掩码、CIDR、分组转发与路由表 | IPv4, subnetting, subnet mask, CIDR, routing table |
-| 5 | [[CN/Lab2 路由器]] | 路由器实验（待补充） | router, lab |
+| 4 | [[CN/Ch4 网络层：数据平面]] | 按问题与机制层次讲解分组转发、三类交换结构与并行扩展、路由器排队、IPv4 / CIDR / DHCP、NAT、IPv6 隧道、OpenFlow 与端到端原则；覆盖 24 页课件，含 12 道解析例题 | data plane, control plane, longest prefix match, router architecture, HOL blocking, bufferbloat, WFQ, IPv4, CIDR, DHCP, route aggregation, NAT, IPv6, tunneling, SDN, OpenFlow, middlebox, end-to-end argument |
+| 5 | [[CN/Lab1 IPv4]] | IPv4 地址与子网划分实验：地址分类、子网掩码、CIDR、分组转发与路由表 | IPv4, subnetting, subnet mask, CIDR, routing table |
+| 6 | [[CN/Lab2 路由器]] | 路由器实验（待补充） | router, lab |
 
 ---
 

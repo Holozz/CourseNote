@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b5cbc6e020dc055d",
+        "id": "df14133c8d67c615",
         "type": "tabs",
         "children": [
           {
-            "id": "436037a1306e700c",
+            "id": "e9f6983a091a0b4e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DB/Ch7 规范化（Normalization）.md",
+                "file": "CN/Hw3.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,31 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ch7 规范化（Normalization）"
-            }
-          },
-          {
-            "id": "29f44faa2fd0fe8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB/Ch4 Intermediate SQL.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Ch4 Intermediate SQL"
+              "title": "Hw3"
             }
           }
         ]
@@ -203,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "数理逻辑/Chapter 4 命题逻辑自然演绎系统的可靠性和完备性.md",
+                "file": "CN/Hw3.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -265,11 +241,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "436037a1306e700c",
+  "active": "1b45e4b8a2906b7c",
   "lastOpenFiles": [
+    "CN/Source/Pasted image 20261021203257.png",
+    "CN/Source/1792588951742.jpg",
+    "CN/Source/Pasted image 20261021175854.png",
+    "1792588951742.jpg",
+    "CN/Ch3 传输层.md",
+    "CN/Hw3.md",
+    "Pasted image 20261021203257.png",
+    "CN/Ch4 网络层：数据平面.md",
+    "Pasted image 20261021175854.png",
+    "CN/Source/Ch4-20261021-p08-多交换平面.png",
+    "CN/Source/Ch4-20261021-p07-纵横与多级交换.png",
+    "CN/Source/Ch4-20261021-p07-经总线交换.png",
+    "CN/Source/Ch4-20261021-p07-经内存交换.png",
+    "CN/Source/Pasted image 20261021171301.png",
+    "db Lab/Lec 6.md",
+    "db Lab/Lec 8.md",
+    "DB/Ch7 规范化（Normalization）.md",
+    "DIP/Ch 5 图像复原.md",
+    "算法设计/Chapter 3 动态规划.md",
+    "CN/Hw2.md",
     "DB/Ch4 Intermediate SQL.md",
     "DB/Ch3 Intro to Sql.md",
-    "DB/Ch7 规范化（Normalization）.md",
     "ML/Ch5 模型的非线性化、过拟合及正则化.md",
     "AGENTS.md",
     "CLAUDE.md",
@@ -280,30 +275,11 @@
     "DB/Ch5 Advanced SQL.md",
     "最优化理论/第 3 次课 凸集的保凸运算与凸函数.md",
     "最优化理论/第 5 次课 常见凸函数、保凸运算与共轭函数.md",
-    "最优化理论/Source/第6次课_凸约束最优性几何示意.png",
-    "最优化理论/Source/第6次课_优化解集关系示意.png",
     "最优化理论/第 6 次课 凸优化问题、最优性条件与典型模型.md",
     "最优化理论/第 4 次课 凸函数的一阶与二阶条件.md",
     "最优化理论/第 2 次课 算法评价、收敛速度与凸集.md",
-    "CN/Source/Pasted image 20261019080913.png",
     "最优化理论/第 1 次课 绪论与基础知识.md",
-    "最优化理论/Source/第5次课_逐点最大示意.png",
-    "最优化理论/Source/第5次课_绝对值幂函数示意.png",
-    "最优化理论/Source/第4次课_凸函数一阶支撑示意.png",
-    "最优化理论/Source/第3次课_凸函数弦线示意.png",
-    "最优化理论/Source/第3次课_单纯形维数示意.png",
-    "CN/Ch3 传输层.md",
-    "最优化理论/Chapter 1 绪论与基础知识.md",
-    "最优化理论/Source/Chapter1_第二次课_不同p的单位球.png",
-    "最优化理论/Source/Chapter1_第二次课_凸包与凸锥包.png",
     "最优化理论/Source",
-    "最优化理论/AGENTS.md",
-    "DIP/Ch 4 频率域滤波.md",
-    "DIP/Ch 5 图像复原.md",
-    "数理逻辑/Chapter 5 命题逻辑范式和 SAT 求解器.md",
-    "SomeStuff/G30-CP.md",
-    "数理逻辑/Chapter 4 命题逻辑自然演绎系统的可靠性和完备性.md",
-    "数理逻辑/Chapter 3 命题逻辑自然演绎系统.md",
     "_ch5_code_check.py",
     "_ch5img",
     "_ch5_raw.txt",
