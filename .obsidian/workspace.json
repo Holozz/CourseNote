@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "df14133c8d67c615",
+        "id": "1deb5845d40141ba",
         "type": "tabs",
         "children": [
           {
-            "id": "e9f6983a091a0b4e",
+            "id": "67e541743b12ccdf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CN/Hw3.md",
+                "file": "数理逻辑/Chapter 6 一阶逻辑的语法与语义.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Hw3"
+              "title": "Chapter 6 一阶逻辑的语法与语义"
             }
           }
         ]
@@ -241,32 +241,37 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1b45e4b8a2906b7c",
+  "active": "67e541743b12ccdf",
   "lastOpenFiles": [
-    "CN/Source/Pasted image 20261021203257.png",
-    "CN/Source/1792588951742.jpg",
-    "CN/Source/Pasted image 20261021175854.png",
-    "1792588951742.jpg",
+    "15Days/2026-10-23.md",
+    "DIP/Ch 5 图像复原.md",
+    "DIP/Source/Ch5-20261022-s26-逆滤波半径比较.png",
+    "DIP/Source/Ch5-20261022-s25-大气湍流.png",
+    "DIP/Source/Ch5-20261022-s23-运动模糊.png",
+    "DIP/Source/Ch5-20261022-s20-冲激响应估计.png",
+    "DIP/Source/Ch5-20261022-s16-最佳陷波噪声模式.png",
+    "DIP/Source/Ch5-20261022-s11-陷波去条纹.png",
+    "DIP/Source/Ch5-20261022-s04-带通提取噪声.png",
+    "DIP/Source/Ch5-20261022-s03-带阻去周期噪声.png",
+    "AGENTS.md",
+    "未命名.md",
+    "DB/Ch7 规范化（Normalization）.md",
+    "15Days/2026-10-21.md",
+    "2026-10-21.md",
+    "15Days",
+    "未命名.canvas",
     "CN/Ch3 传输层.md",
     "CN/Hw3.md",
-    "Pasted image 20261021203257.png",
+    "CN/Source/Pasted image 20261021203257.png",
+    "CN/Source/1792588951742.jpg",
     "CN/Ch4 网络层：数据平面.md",
-    "Pasted image 20261021175854.png",
-    "CN/Source/Ch4-20261021-p08-多交换平面.png",
-    "CN/Source/Ch4-20261021-p07-纵横与多级交换.png",
-    "CN/Source/Ch4-20261021-p07-经总线交换.png",
-    "CN/Source/Ch4-20261021-p07-经内存交换.png",
-    "CN/Source/Pasted image 20261021171301.png",
     "db Lab/Lec 6.md",
     "db Lab/Lec 8.md",
-    "DB/Ch7 规范化（Normalization）.md",
-    "DIP/Ch 5 图像复原.md",
     "算法设计/Chapter 3 动态规划.md",
     "CN/Hw2.md",
     "DB/Ch4 Intermediate SQL.md",
     "DB/Ch3 Intro to Sql.md",
     "ML/Ch5 模型的非线性化、过拟合及正则化.md",
-    "AGENTS.md",
     "CLAUDE.md",
     "ML/AGENTS.md",
     "DB/AGENTS.md",
@@ -276,9 +281,6 @@
     "最优化理论/第 3 次课 凸集的保凸运算与凸函数.md",
     "最优化理论/第 5 次课 常见凸函数、保凸运算与共轭函数.md",
     "最优化理论/第 6 次课 凸优化问题、最优性条件与典型模型.md",
-    "最优化理论/第 4 次课 凸函数的一阶与二阶条件.md",
-    "最优化理论/第 2 次课 算法评价、收敛速度与凸集.md",
-    "最优化理论/第 1 次课 绪论与基础知识.md",
     "最优化理论/Source",
     "_ch5_code_check.py",
     "_ch5img",
@@ -288,8 +290,6 @@
     "DIP/_tmp_ch5/extract.py",
     "DIP/_tmp_ch5",
     "计组实验报告/Source/Lab1/test-results.log",
-    "计组实验报告/Source/Lab1/waveform-values.json",
-    "未命名.canvas",
     "未命名 1.canvas"
   ]
 }
