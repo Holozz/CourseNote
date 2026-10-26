@@ -232,8 +232,8 @@
 | 2 | [[CN/Ch2 应用层]] | 应用体系结构（C/S vs P2P）、进程与套接字、HTTP（持续/非持续连接、报文格式、状态码、Cookie、Web 缓存、HTTP/1.1→3）、SMTP/IMAP、DNS（层次结构、资源记录、迭代 vs 递归）、P2P（BitTorrent 一报还一报）、CDN 与 DASH、UDP/TCP 套接字编程 | application architecture, socket, HTTP, persistent connection, cookie, web cache, conditional GET, SMTP, IMAP, DNS, resource record, P2P, BitTorrent, tit-for-tat, CDN, DASH, socket programming |
 | 3 | [[CN/Ch3 传输层]] | 传输层服务与逻辑通信、多路复用/分解（UDP 二元组 vs TCP 四元组）、UDP（报文段结构、反码和检验和、伪首部、弱保护）、可靠数据传输原理（rdt1.0→3.0、GBN、SR 与窗口窘境、停等性能与流水线）、TCP（报文段结构、字节序号与累积确认、RTT 估计与超时、快速重传、流量控制 rwnd、三次握手/四次挥手、TIME_WAIT）、拥塞控制原理（三种情形与代价）、TCP 拥塞控制（AIMD、慢启动、ssthresh、快速恢复、CUBIC、BBR、ECN、公平性）；42 条易错点表 + 12 道高难例题 | transport layer, multiplexing/demultiplexing, UDP, checksum, one's complement, reliable data transfer, rdt, stop-and-wait, pipelining, GBN, selective repeat, sliding window, TCP, sequence number, cumulative ACK, RTT estimation, Karn's algorithm, fast retransmit, flow control, rwnd, three-way handshake, four-way teardown, TIME_WAIT, congestion control, AIMD, slow start, ssthresh, fast recovery, CUBIC, BBR, ECN, fairness |
 | 4 | [[CN/Ch4 网络层：数据平面]] | 按问题与机制层次讲解分组转发、三类交换结构与并行扩展、路由器排队、IPv4 / CIDR / DHCP、NAT、IPv6 隧道、OpenFlow 与端到端原则；覆盖 24 页课件，含 12 道解析例题 | data plane, control plane, longest prefix match, router architecture, HOL blocking, bufferbloat, WFQ, IPv4, CIDR, DHCP, route aggregation, NAT, IPv6, tunneling, SDN, OpenFlow, middlebox, end-to-end argument |
-| 5 | [[CN/Lab1 IPv4]] | IPv4 地址与子网划分实验：地址分类、子网掩码、CIDR、分组转发与路由表 | IPv4, subnetting, subnet mask, CIDR, routing table |
-| 6 | [[CN/Lab2 路由器]] | 路由器实验（待补充） | router, lab |
+| 5 | [[Lab1 IPv4]] | IPv4 地址与子网划分实验：地址分类、子网掩码、CIDR、分组转发与路由表 | IPv4, subnetting, subnet mask, CIDR, routing table |
+| 6 | [[Lab2 路由器]] | 路由器实验（待补充） | router, lab |
 
 ---
 
