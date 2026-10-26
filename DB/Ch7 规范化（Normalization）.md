@@ -801,7 +801,7 @@ $$
 CE\to BT,\qquad E\to B,\qquad CB\to E.
 $$
 
-第一条右侧 $B$ 可由 $E\to B$ 推出，所以正则覆盖为 $F_c=\{CE\to T,E\to B,CB\to E\}$。$CE$ 的闭包为 $CEBT$；删掉 $C$ 或 $E$ 后都不再覆盖全部属性，故 $CE$ 是候选键。另一个候选键是 $CB$。
+第一条右侧 $B$ 可由 $E\to B$ 推出，所以正则覆盖为 $F_c=\{CE\to T,E\to B,CB\to E\}$。$CE$ 的闭包为 $CEBT$；删掉 $C$ 或 $E$ 后都不再覆盖全部属性，故 $CE$ 是候选键。另一个候选键是 $CB$
 
 > [!example]- 银行例子的四个步骤
 > **① 求覆盖。** 对 $CE\to BT$，先暂删右侧 $B$。其余 $E\to B$ 仍在，从 $CE$ 出发仍能得到 $B$，所以这次删除不损失规则。覆盖为 $CE\to T,E\to B,CB\to E$。
