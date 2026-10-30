@@ -4,7 +4,7 @@
   "baseFontSizeAction": true,
   "baseFontSize": 15,
   "accentColor": "#773153",
-  "textFontFamily": "eras ITC,Fira code,Times New Roman",
+  "textFontFamily": "Fira code,eras ITC,Times New Roman",
   "interfaceFontFamily": "eras ITC,Arial Black,Times New Roman",
   "nativeMenus": false,
   "enabledCssSnippets": [
