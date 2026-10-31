@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "74855ce1327c30eb",
+        "id": "63f7bb69b87511d3",
         "type": "tabs",
         "children": [
           {
-            "id": "1287ca398933d80c",
+            "id": "3870b701ea49c986",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CN/Hw/Hw4.md",
+                "file": "15Days/SellerPilot/项目介绍.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Hw4"
+              "title": "项目介绍"
             }
           },
           {
-            "id": "08f9f13513ed2899",
+            "id": "8d2dde3f44847201",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CN/Ch4 网络层：数据平面.md",
+                "file": "15Days/SellerPilot/项目介绍-修订版.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,10 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ch4 网络层：数据平面"
+              "title": "项目介绍-修订版"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -265,14 +266,39 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1287ca398933d80c",
+  "active": "8d2dde3f44847201",
   "lastOpenFiles": [
+    "15Days/SellerPilot/项目拷打-整理版.md",
+    "CN/Lab/静态路由实验.md",
+    "CN/Lab/心得体会3.md",
+    "CN/Lab/心得体会2.md",
+    "CN/Lab/src/Pasted image 20261031140153.png",
+    "15Days/SellerPilot/项目介绍.md",
+    "15Days/SellerPilot/项目介绍-修订版.md",
+    "15Days/SellerPilot/拷问-修订版.md",
+    "15Days/SellerPilot/简历项目与技能改写-目标稿-2026-10-30.md",
+    "15Days/SellerPilot/拷问.md",
+    "15Days/SellerPilot/拷问-参考版.md",
+    "15Days/2026-10-30.md",
+    "15Days/2026-10-27.md",
+    "15Days/2026-10-29.md",
+    "15Days/2026-10-26.md",
+    "verification/java/J2J3-200rps-load.json.md",
+    "verification/java/J0-load.json.md",
+    "verification/java",
+    "verification",
+    "15Days/2026-10-25.md",
+    "15Days/DeepResearch",
+    "15Days/SellerPilot",
+    "最优化理论/第 6 次课 凸优化问题、最优性条件与典型模型.md",
+    "最优化理论/第 7 次课 多目标优化与 Lagrange 对偶函数.md",
+    "最优化理论/第 1 次课 绪论与基础知识.md",
+    "最优化理论/第 2 次课 算法评价、收敛速度与凸集.md",
+    "最优化理论/第 3 次课 凸集的保凸运算与凸函数.md",
+    "最优化理论/第 5 次课 常见凸函数、保凸运算与共轭函数.md",
     "CN/Ch4 网络层：数据平面.md",
     "CN/Hw/Hw4.md",
     "数理逻辑/Chapter 6 一阶逻辑的语法与语义.md",
-    "数理逻辑/Chapter 7 一阶逻辑的代入定理和自然演绎系统.md",
-    "FA/Ch4 正则语言的判定性质与 DFA 最小化.md",
-    "FA/Ch5 正则语言的闭包性质.md",
     "FA/Source/Ch5-s26-逆同态构造.png",
     "FA/Source/Ch5-s08-星的复合自动机.png",
     "FA/Source/Ch5-s06-串接的复合自动机.png",
@@ -282,37 +308,12 @@
     "FA/Source/Ch4-s32-乘积自动机.png",
     "FA/Source/Ch4-s22-接受路径上的环.png",
     "FA/Source",
-    "FA/Ch3 正则表达式（Regular Expressions）.md",
-    "CN/Hw/Hw5.md",
-    "DIP/Ch 6 彩色图像处理.md",
-    "15Days/2026-10-29.md",
-    "15Days/2026-10-27.md",
-    "15Days/2026-10-25.md",
-    "15Days/2026-10-23.md",
-    "15Days/2026-10-21.md",
-    "15Days/2026-10-24.md",
-    "15Days/2026-10-26.md",
-    "DIP/Ch 9 形态学图像处理.md",
     "DIP/Source/Ch9-p16-击中或击不中定位.png",
-    "DIP/Source/Ch9-p14-指纹开闭处理.png",
-    "DB/Ch7 规范化（Normalization）.md",
-    "ML/Ch8 神经网络的训练与优化.md",
     "DIP/_tmp_ch6_revision/maintenance.py",
-    "DIP/_tmp_ch6_revision/before.md",
     "DIP/_tmp_ch6_revision/revise.py",
     "DIP/_tmp_ch6_revision",
-    "算法设计/分治.md",
-    "算法设计/Ch 1.md",
-    "CN/Ch3 传输层.md",
-    "算法设计/Hw1.md",
-    "db Lab/Lec 9.md",
-    "DIP/Ch 5 图像复原.md",
     "CN/Lab/src",
     "CN/Hw",
-    "CN/Lab",
-    "15Days/未命名",
-    "15Days/MySQL",
-    "15Days/JavaSE/泛型",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
