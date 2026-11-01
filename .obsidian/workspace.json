@@ -11,13 +11,76 @@
             "id": "3870b701ea49c986",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "15Days/SellerPilot/项目介绍-修订版.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "项目介绍-修订版"
+            }
+          },
+          {
+            "id": "6bd854dfe3519f47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "15Days/SellerPilot/项目介绍.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "项目介绍"
+            }
+          },
+          {
+            "id": "b5a34d10211cc6d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CN/Ch5 网络层：控制平面.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Ch5 网络层：控制平面"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 214.6429100036621
+    "width": 214.6429100036621,
+    "collapsed": true
   },
   "right": {
     "id": "a4c20e317a755670",
@@ -226,8 +290,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1b45e4b8a2906b7c",
+  "active": "b5a34d10211cc6d7",
   "lastOpenFiles": [
+    "15Days/SellerPilot/项目介绍.md",
+    "15Days/SellerPilot/项目介绍-修订版.md",
+    "15Days/SellerPilot/简历项目与技能改写-目标稿-2026-10-30.md",
+    "15Days/杂问/自我介绍.md",
+    "15Days/DeepResearch/03 DeepResearch 简历逐字解释与安全引申.md",
+    "15Days/2026-11-01.md",
+    "15Days/2026-10-23.md",
+    "15Days/2026-10-21.md",
     "BannerImg/Gj6l8_CbcAEm0xT.jpg",
     "BannerImg/e6c03024356ceea5a97ad9b6b170d76a48cced00.png@1256w_870h_!web-article-pic.webp",
     "数理逻辑/Chapter 7 一阶逻辑的代入定理和自然演绎系统.md",
@@ -235,20 +307,15 @@
     "CN/Ch4 网络层：数据平面.md",
     "CN/Hw/Hw5.md",
     "CN/Hw/Hw4.md",
-    "15Days/2026-11-01.md",
-    "15Days/SellerPilot/项目介绍-修订版.md",
     "15Days/算法/子串&数组.md",
     "15Days/算法/双指针.md",
     "15Days/算法/哈希.md",
     "15Days/算法/子串/未命名.md",
     "15Days/算法/子串",
-    "15Days/DeepResearch/03 DeepResearch 简历逐字解释与安全引申.md",
     "15Days/SellerPilot/简历逐字解释与安全引申.md",
-    "15Days/SellerPilot/简历项目与技能改写-目标稿-2026-10-30.md",
     "15Days/SellerPilot/项目拷打-整理版.md",
     "15Days/SellerPilot/拷问.md",
     "15Days/SellerPilot/拷问-参考版.md",
-    "15Days/SellerPilot/项目介绍.md",
     "15Days/2026-10-31.md",
     "15Days/2026-10-30.md",
     "15Days/src/Pasted image 20261031181103.png",
@@ -259,8 +326,6 @@
     "CN/Lab/心得体会3.md",
     "CN/Lab/心得体会2.md",
     "CN/Lab/src/Pasted image 20261031140153.png",
-    "15Days/2026-10-27.md",
-    "15Days/2026-10-29.md",
     "verification/java",
     "verification",
     "15Days/DeepResearch",
@@ -270,7 +335,6 @@
     "FA/Source/Ch5-s06-串接的复合自动机.png",
     "FA/Source/Ch5-s04-并的复合自动机.png",
     "FA/Source/Ch4-s49-棋盘DFA最小化结果.png",
-    "FA/Source/Ch4-s43-棋盘DFA原表.png",
     "FA/Source",
     "DIP/_tmp_ch6_revision/maintenance.py",
     "DIP/_tmp_ch6_revision/revise.py",
