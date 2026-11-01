@@ -5,7 +5,7 @@
 
 **最后更新**: 2026-10-31
 **涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机) · 数理逻辑 · 最优化理论 · 15Days (实习准备)
-**笔记总数**: 123
+**笔记总数**: 127
 
 ---
 
@@ -285,14 +285,18 @@
 
 ---
 
-## 📁 15Days — 实习准备 (2 篇)
+## 📁 15Days — 实习准备 (6 篇)
 
-> 按项目和后端基础整理实习复习资料；本次纳入 SellerPilot 的面试题库与源码讲解，不追溯重算已有日记和其他复习文件。
+> 按项目和后端基础整理实习复习资料；纳入 SellerPilot 与 DeepResearch 的面试问答、项目原理和简历逐词解释，不追溯重算已有日记和其他复习文件。
 
 | # | 笔记 | 摘要 | 核心主题 |
 |---|------|------|----------|
 | 1 | [[拷问]] | 118 道项目问答；核心答案按问题完整作答，解释业务痛点、技术选择、机制与验证效果，附递进追问和口述路线 | backend interview, transactions, MVCC, cache, idempotency, evidence |
-| 2 | [[项目介绍]] | 按业务与数据生命周期讲解当前 Java 实现，详解整文件事务、统计粒度、快照缓存、重建保护和并发审批，附流程图、案例和来源 | source walkthrough, MySQL, Redis, snapshot, locking, validation |
+| 2 | [[项目介绍]] | 按业务与数据生命周期讲解当前 Java 实现，详解整文件事务、统计粒度、快照缓存、重建保护和并发审批，附流程图、案例和来源 | source walkthrough, MySQL, Redis, snapshot, locking, validation || 3 | [[15Days/SellerPilot/简历逐字解释与安全引申]] | 对用户提供的简历全文作 69 项逐词组解释，逐条连接业务痛点、实现、选型理由、验证效果与安全引申，附完整口述和证据 | resume defense, trade-offs, evidence, transactions, cache |
+| 4 | [[15Days/DeepResearch/01 DeepResearch 项目面试拷问与参考答案]] | 63 道递进问答及充分答案，覆盖 DAG/asyncio、共享记忆、压缩、审查、八股与验证边界 | Agent interview, asyncio, DAG, SQLite, TextRank, evidence |
+| 5 | [[15Days/DeepResearch/02 DeepResearch 项目原理与源码导读]] | 按请求生命周期深入解释三条技术主线，附数据流、失败路径、真实案例与题库映射 | orchestration, memory, context compression, review, trace |
+| 6 | [[15Days/DeepResearch/03 DeepResearch 简历逐字解释与安全引申]] | 对完整简历作 60 项连续语义片段解释，覆盖动机、实现、选型理由、限定词和可防守引申 | resume defense, trade-offs, evidence, failure recovery |
+
 
 ---
 
