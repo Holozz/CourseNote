@@ -567,20 +567,20 @@ $$
 
 *课件第 41 张幻灯片。图中首部长度旁的 bytes 是换算后长度，字段实际单位见下文*
 
-| 字段 | 位数 | 解决的问题与计算方式 |
-|---|---|---|
-| Version | 4 | 表示 IP 版本，IPv4 中取 4 |
-| IHL，首部长度 | 4 | 指明载荷从哪里开始；单位是 32 位字 |
-| Type of Service | 8 | 课件按 DSCP 6 位与 ECN 2 位解释服务区分和拥塞信号 |
-| Total Length | 16 | 整个 IPv4 数据报的字节数，含首部与数据 |
-| Identification | 16 | 与相关地址和协议等信息一起用于关联分片 |
-| Flags | 3 | 含禁止分片 DF、后续仍有分片 MF 等控制位 |
-| Fragment Offset | 13 | 本片数据在原始数据部分中的位置，单位为 8 B |
-| TTL | 8 | 限制数据报可继续经过的跳数，防止无限循环 |
-| Protocol | 8 | 指明载荷交给哪个上层协议，如 TCP、UDP、ICMP |
-| Header Checksum | 16 | 检查 IPv4 首部，不覆盖数据载荷 |
-| Source / Destination Address | 各 32 | 源、目的接口的 IPv4 地址 |
-| Options 与 Padding | 可变 | 支持可选信息并保持首部按 32 位对齐 |
+| 字段                           | 位数   | 解决的问题与计算方式                       |
+| ---------------------------- | ---- | -------------------------------- |
+| Version                      | 4    | 表示 IP 版本，IPv4 中取 4               |
+| IHL，首部长度                     | 4    | 指明载荷从哪里开始；单位是 32 位字              |
+| Type of Service              | 8    | 课件按 DSCP 6 位与 ECN 2 位解释服务区分和拥塞信号 |
+| Total Length                 | 16   | 整个 IPv4 数据报的字节数，含首部与数据           |
+| Identification               | 16   | 与相关地址和协议等信息一起用于关联分片              |
+| Flags                        | 3    | 含禁止分片 DF、后续仍有分片 MF 等控制位          |
+| Fragment Offset              | 13   | 本片数据在原始数据部分中的位置，单位为 8 B          |
+| TTL                          | 8    | 限制数据报可继续经过的跳数，防止无限循环             |
+| Protocol                     | 8    | 指明载荷交给哪个上层协议，如 TCP、UDP、ICMP      |
+| Header Checksum              | 16   | 检查 IPv4 首部，不覆盖数据载荷               |
+| Source / Destination Address | 各 32 | 源、目的接口的 IPv4 地址                  |
+| Options 与 Padding            | 可变   | 支持可选信息并保持首部按 32 位对齐              |
 
 IPv4 的首部长度是 $H=4\times IHL$ 字节。最小 IHL 为 5，对应 20 B；最大为 15，对应 60 B。总长度记为 $T$，则 IP 载荷长度为 $T-H$，而不是 $T-20$，除非确认没有选项
 
