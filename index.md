@@ -3,9 +3,9 @@
 > [!info] 索引说明
 > 本索引基于 [[LLM Wiki]] 方法论构建，按学科分类列出所有笔记文件。每个条目包含 Wiki-link、一句话摘要和核心主题。查询时先查此索引，再钻入具体页面。
 
-**最后更新**: 2026-11-01
+**最后更新**: 2026-11-02
 **涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机) · 数理逻辑 · 最优化理论 · 15Days (实习准备)
-**笔记总数**: 128
+**笔记总数**: 130
 
 ---
 
@@ -90,9 +90,9 @@
 
 ---
 
-## 📁 ML — 机器学习与数据挖掘 (9 篇)
+## 📁 ML — 机器学习与数据挖掘 (10 篇)
 
-> 中山大学《机器学习与数据挖掘》课程笔记：从回归、分类到非线性化与正则化、支持向量机、神经网络及训练优化，并含 Transformer、GPT、BERT 与后训练对齐补充。
+> 中山大学《机器学习与数据挖掘》课程笔记：从回归、分类到非线性化与正则化、支持向量机、神经网络及训练优化，并含 Transformer、GPT、BERT 与后训练对齐补充；进一步覆盖决策树、随机森林与 AdaBoost 集成方法。
 
 | # | 笔记 | 摘要 | 核心主题 |
 |---|------|------|----------|
@@ -105,6 +105,7 @@
 | 7 | [[ML/Ch7 神经网络]] | 神经网络：可学习基函数（激活函数 Sigmoid/Tanh/ReLU/Leaky ReLU）、反向传播（链式法则+记忆化）、CNN（局部连接+参数共享+池化+LeNet/AlexNet/VGG/ResNet）、RNN/LSTM、Transformer 自注意力机制（QKV+多头）、GNN 节点聚合；梯度消失、感受野、跳跃连接、11 道例题 | neural network, activation function, backpropagation, gradient vanishing, CNN, convolution, pooling, ResNet, skip connection, RNN, LSTM, Transformer, self-attention, QKV, multi-head attention, BERT, GPT, GNN, GCN |
 | 8 | [[ML/Ch8 神经网络的训练与优化]] | Lecture 8 全部 29 页：SGD 与病态曲率、动量、RMSProp/EMA、Adam 六步与偏差校正、预处理与初始化、Dropout 训练测试缩放、BN/LN/IN 统计轴、超参数与损失曲线；12 道例题 | SGD, momentum, RMSProp, EMA, Adam, bias correction, whitening, initialization, dropout, batch normalization, layer normalization, instance normalization, hyperparameter tuning |
 | 9 | [[ML/Ch8 Supplement2 Transformer、GPT 与 BERT]] | Supplement 2 全部 35 页：QKV 与维度、因果遮罩、多头与位置编码、Encoder-Decoder、GPT 预训练/微调/上下文学习、BERT MLM/NSP 与下游任务、SFT/RM/RLHF/PPO 及图示 GRPO、多模态与推理历史案例；12 道例题 | Transformer, self-attention, causal mask, multi-head attention, positional encoding, GPT, BERT, MLM, NSP, in-context learning, SFT, reward model, RLHF, PPO, GRPO |
+| 10 | [[ML/Ch9 决策树与集成方法]] | Lecture 9 全部 51 页：熵与信息增益、电影和打球选根复算、递归建树与剪枝、Bagging 与随机森林、AdaBoost 三轮精确重加权及指数损失推导；17 张原图、10 道解析例题与逐页覆盖 | decision tree, entropy, conditional entropy, information gain, pruning, bootstrap, Bagging, random forest, AdaBoost, exponential loss |
 
 ---
 
@@ -270,7 +271,7 @@
 
 ---
 
-## 📁 最优化理论 (7 篇)
+## 📁 最优化理论 (8 篇)
 
 > 按授课课件逐次整理最优化理论，分别维护每次课的定义、证明、习题与材料覆盖.
 
@@ -282,7 +283,9 @@
 | 4 | [[最优化理论/第 4 次课 凸函数的一阶与二阶条件]] | 2026-09-28 课件全部 8 页：正无穷扩展与示性函数、凸/严格凸/凹/强凸的一阶条件、驻点最优性与梯度单调性、Hessian 判据及二次函数分类；补足证明、域条件及反例，含 4 道例题解析 | extended-real function, indicator function, first-order condition, gradient monotonicity, Hessian, strong convexity, quadratic function |
 | 5 | [[最优化理论/第 5 次课 常见凸函数、保凸运算与共轭函数]] | 2026-10-12 课件全部 27 页：幂函数、负对数与熵、范数、最大值及 log-sum-exp、负对数行列式；加权和/仿射/上确界/单调复合、共轭三例与次水平集，含全部三页习题及边界辨析 | log-sum-exp, log determinant, convexity-preserving operations, composition, conjugate function, sublevel set |
 | 6 | [[最优化理论/第 6 次课 凸优化问题、最优性条件与典型模型]] | 2026-10-19 课件全部 23 页：域与解集、局部/全局性质、可行方向与约束最优性、LP 标准化、QP/QCQP 及均值—方差模型；按新版技能分层整理定义与判据、17 张核对表、7 道完整解析，保留勘误与覆盖地图 | convex optimization, feasible direction, variational inequality, complementarity, LP standard form, QP, QCQP, mean-variance model |
-| 7 | [[最优化理论/第 7 次课 多目标优化与 Lagrange 对偶函数]] | 2026-10-26 课件全部 24 页：回归正则化、SDP、多目标支配与 Pareto 最优、正权加权法；Lagrange 函数、凹性与弱对偶、LP/最小范数/双向划分及最大熵对偶函数，含三页作业完整解析、原对偶条件对照与四道补充例题 | regularization, SDP, multiobjective optimization, Pareto optimum, Lagrangian, dual function, weak duality, conjugate function, maximum entropy |
+| 7 | [[最优化理论/第 7 次课 多目标优化与 Lagrange 对偶函数]] | 2026-10-26 课件全部 24 页：回归正则化、SDP、多目标支配与 Pareto 最优、正权加权法；Lagrange 函数、凹性与弱对偶、LP/最小范数/双向划分及最大熵对偶函数，含三页作业完整解析、原对偶条件对照与四道补充例题 | regularization, SDP, multiobjective optimization, Pareto optimum, Lagrangian, dual function, weak duality, conjugate function, maximum entropy |
+
+| 8 | [[最优化理论/第 8 次课 强对偶、Slater 条件与对偶解释]] | 2026-11-02 课件全部 28 页：对偶有限值条件、强弱对偶与达到性、相对内部、标准及弱化 Slater、LP/最小范数/最大熵/QCQP；几何、经济、多目标与鞍点解释，含两页作业全部解析、等号思考及条件反例 | strong duality, Slater condition, relative interior, constraint qualification, QCQP, shadow price, minimax inequality, saddle point |
 
 ---
 
@@ -292,11 +295,11 @@
 
 | # | 笔记 | 摘要 | 核心主题 |
 |---|------|------|----------|
-| 1 | [[拷问]] | 118 道项目问答；核心答案按问题完整作答，解释业务痛点、技术选择、机制与验证效果，附递进追问和口述路线 | backend interview, transactions, MVCC, cache, idempotency, evidence |
-| 2 | [[项目介绍]] | 按业务与数据生命周期讲解当前 Java 实现，详解整文件事务、统计粒度、快照缓存、重建保护和并发审批，附流程图、案例和来源 | source walkthrough, MySQL, Redis, snapshot, locking, validation || 3 | [[15Days/SellerPilot/简历逐字解释与安全引申]] | 对用户提供的简历全文作 69 项逐词组解释，逐条连接业务痛点、实现、选型理由、验证效果与安全引申，附完整口述和证据 | resume defense, trade-offs, evidence, transactions, cache |
-| 4 | [[15Days/DeepResearch/01 DeepResearch 项目面试拷问与参考答案]] | 63 道递进问答及充分答案，覆盖 DAG/asyncio、共享记忆、压缩、审查、八股与验证边界 | Agent interview, asyncio, DAG, SQLite, TextRank, evidence |
-| 5 | [[15Days/DeepResearch/02 DeepResearch 项目原理与源码导读]] | 按请求生命周期深入解释三条技术主线，附数据流、失败路径、真实案例与题库映射 | orchestration, memory, context compression, review, trace |
-| 6 | [[15Days/DeepResearch/03 DeepResearch 简历逐字解释与安全引申]] | 对完整简历作 60 项连续语义片段解释，覆盖动机、实现、选型理由、限定词和可防守引申 | resume defense, trade-offs, evidence, failure recovery |
+| 1 | [[拷问]] | 三版合并的 136 道完整口述问答，含术语解释、技术取舍、故障情景、性能基线及重点路线 | backend interview, transactions, MVCC, cache, idempotency, evidence |
+| 2 | [[项目介绍]] | 按业务与数据生命周期讲解当前 Java 实现，详解整文件事务、统计粒度、快照缓存、重建保护和并发审批，附流程图、案例和来源 | source walkthrough, MySQL, Redis, snapshot, locking, validation || 3 | [[15Days/SellerPilot/逐字解释与安全引申]] | 对用户提供的简历全文作 69 项逐词组解释，逐条连接业务痛点、实现、选型理由、验证效果与安全引申，附完整口述和证据 | resume defense, trade-offs, evidence, transactions, cache |
+| 4 | [[项目拷问与参考答案]] | 63 道递进问答及充分答案，覆盖 DAG/asyncio、共享记忆、压缩、审查、八股与验证边界 | Agent interview, asyncio, DAG, SQLite, TextRank, evidence |
+| 5 | [[项目原理与源码导读]] | 按请求生命周期深入解释三条技术主线，附数据流、失败路径、真实案例与题库映射 | orchestration, memory, context compression, review, trace |
+| 6 | [[15Days/DeepResearch/逐字解释与安全引申]] | 对完整简历作 60 项连续语义片段解释，覆盖动机、实现、选型理由、限定词和可防守引申 | resume defense, trade-offs, evidence, failure recovery |
 
 
 ---
