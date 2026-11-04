@@ -4,59 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "63f7bb69b87511d3",
+        "id": "c5a7af0e225efa7f",
         "type": "tabs",
         "children": [
           {
-            "id": "6bd854dfe3519f47",
+            "id": "fd28fcfee1d88798",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "15Days/SellerPilot/拷问.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "拷问"
-            }
-          },
-          {
-            "id": "8cc2cc6f790d386d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "15Days/SellerPilot/项目介绍.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "项目介绍"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -266,8 +227,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8cc2cc6f790d386d",
+  "active": "fd28fcfee1d88798",
   "lastOpenFiles": [
+    "CN/Ch5 网络层：控制平面.md",
+    "DB/HW/hw13.md",
+    "CN/Source/Pasted image 20261104175823.png",
+    "DB/HW/hw7.md",
+    "15Days/SellerPilot/拷问.md",
+    "15Days/SellerPilot/项目介绍.md",
     "15Days/算法/子串&数组.md",
     "15Days/算法/双指针.md",
     "15Days/算法/矩阵.md",
@@ -284,27 +251,21 @@
     "db Lab/Source/Pasted image 20261104120606.png",
     "db Lab/Source/Pasted image 20261104121344.png",
     "db Lab/Source/Pasted image 20261104134935.png",
-    "db Lab/Source/Pasted image 20261104113410.png",
     "DB/Ch13 数据存储结构.md",
     "DB/HW/hw1.md",
     "DB/HW/hw2.md",
     "DB/HW/hw6.md",
     "DB/HW/hw4.md",
     "DB/HW/hw3.md",
-    "DB/HW/hw7.md",
     "DB/HW",
     "DB/新建文件夹",
-    "15Days/SellerPilot/项目介绍.md",
     "15Days/SellerPilot/逐字解释与安全引申.md",
-    "15Days/SellerPilot/拷问.md",
     "15Days/SellerPilot/简历项目与技能改写-目标稿-2026-10-30.md",
     "15Days/Journals/2026-11-03.md",
     "DIP/Ch 9 形态学图像处理.md",
     "ML/Ch9 决策树与集成方法.md",
     "15Days/杂问/自我介绍.md",
     "15Days/Journals/2026-11-02.md",
-    "15Days/Journals/2026-11-01.md",
-    "15Days/Journals/2026-10-23.md",
     "15Days/Journals",
     "15Days/算法/子串",
     "15Days/src",
