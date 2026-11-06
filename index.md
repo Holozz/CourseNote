@@ -8,11 +8,11 @@
 
 
 
-**最后更新**: 2026-11-04
+**最后更新**: 2026-11-06
 
 **涵盖学科**: C++ Language · OS (操作系统) · DC (数字电路) · AI (人工智能) · ML (机器学习与数据挖掘) · 图论 · 代数结构 · DIP (数字图像处理) · DB (数据库原理) · Python · Algorithm · HTML · C Language · CN (计算机网络) · FA (形式语言与自动机) · 数理逻辑 · 最优化理论 · 15Days (实习准备)
 
-**笔记总数**: 132
+**笔记总数**: 133
 
 
 
@@ -518,11 +518,11 @@
 
 
 
-## 📁 数理逻辑 (6 篇)
+## 📁 数理逻辑 (7 篇)
 
 
 
-> 命题逻辑与一阶逻辑课程笔记，涵盖语法与语义、真值函数和联结词完备集、自然演绎及其可靠性与完备性、公式范式与 SAT，以及一阶量词语义、代入、约束变量改名和自然演绎规则及其可靠性.
+> 命题逻辑与一阶逻辑课程笔记，涵盖语法与语义、真值函数和联结词完备集、自然演绎及其可靠性与完备性、公式范式与 SAT，以及一阶量词语义、代入、约束变量改名、规则可靠性和量词等值推导.
 
 
 
@@ -541,6 +541,8 @@
 | 5 | [[数理逻辑/Chapter 6 一阶逻辑的语法与语义]] | 第六讲全部 36 个 PDF 页面（含 1 页重复）：语言与项、自由变量、解释与递归语义、赋值一致性、量词规律与反模型、等值置换、代入定理和约束变量改名；含模型大小课件题及 5 道补充题，展开核心归纳证明 | first-order logic, syntax, semantics, free variable, interpretation, assignment, quantifier, substitution, variable capture, bound variable renaming |
 
 | 6 | [[数理逻辑/Chapter 7 一阶逻辑的代入定理和自然演绎系统]] | 第七讲全部 31 个 PDF 页面：代入与改名证明、等号和量词六规则、新参数作用域、全部课件推导及错误证明诊断、规则可靠性；补解全部四组等价练习与 3 个反模型，区分完备性陈述和已给证明 | substitution theorem, natural deduction, equality, eigenvariable, assumption discharge, soundness, completeness, quantifier equivalence |
+
+| 7 | [[数理逻辑/Chapter 8 一阶逻辑自然演绎系统的可靠性与应用]] | 第八讲全部 30 个 PDF 页面：从代入定理和逐规则可靠性到证明结构归纳，展开等号同余、量词换序、量词否定及量词与联结词分配；含多组课件推导、补充反模型与页面覆盖图 | first-order logic, natural deduction, soundness, substitution theorem, eigenvariable, quantifier equivalence, countermodel |
 
 
 
@@ -597,10 +599,10 @@
 | 1 | [[拷问]] | 按新简历更新的 169 道完整折叠口述问答，覆盖毛利核算、来源修订、异步发布、读取一致性、缓存与审批 | backend interview, transactions, MVCC, cache, idempotency, evidence |
 
 | 2 | [[项目介绍]] | 从最小页面请求开始的 12 步静态源码导读，贯穿手算、导入、毛利、任务和发布读取，保留 14 章机制详解 | source walkthrough, MySQL, Redis, snapshot, locking, validation |
-| 3 | [[15Days/SellerPilot/逐字解释与安全引申]] | 按当前四条投递稿完整解释项目、技术栈、毛利、异步发布、审批与缓存，附逐句口述、例子及证据 | resume defense, trade-offs, evidence, transactions, cache |
+| 3 | [[15Days/项目/SellerPilot/逐字解释与安全引申]] | 按当前四条投递稿完整解释项目、技术栈、毛利、异步发布、审批与缓存，附逐句口述、例子及证据 | resume defense, trade-offs, evidence, transactions, cache |
 | 4 | [[项目拷问与参考答案]] | 63 道递进问答及充分答案，覆盖 DAG/asyncio、共享记忆、压缩、审查、八股与验证边界 | Agent interview, asyncio, DAG, SQLite, TextRank, evidence |
 | 5 | [[项目原理与源码导读]] | 按请求生命周期深入解释三条技术主线，附数据流、失败路径、真实案例与题库映射 | orchestration, memory, context compression, review, trace |
-| 6 | [[15Days/DeepResearch/逐字解释与安全引申]] | 对完整简历作 60 项连续语义片段解释，覆盖动机、实现、选型理由、限定词和可防守引申 | resume defense, trade-offs, evidence, failure recovery |
+| 6 | [[15Days/项目/DeepResearch/逐字解释与安全引申]] | 对完整简历作 60 项连续语义片段解释，覆盖动机、实现、选型理由、限定词和可防守引申 | resume defense, trade-offs, evidence, failure recovery |
 
 
 

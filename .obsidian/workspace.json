@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "c5a7af0e225efa7f",
+        "id": "e5a7feb452fa5858",
         "type": "tabs",
         "children": [
           {
-            "id": "fd28fcfee1d88798",
+            "id": "e1f06da139a44d18",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "数理逻辑/Chapter 7 一阶逻辑的代入定理和自然演绎系统.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Chapter 7 一阶逻辑的代入定理和自然演绎系统"
             }
           }
         ]
@@ -100,8 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 214.6429100036621,
-    "collapsed": true
+    "width": 214.6429100036621
   },
   "right": {
     "id": "a4c20e317a755670",
@@ -227,21 +240,41 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fd28fcfee1d88798",
+  "active": "e1f06da139a44d18",
   "lastOpenFiles": [
-    "CN/Ch5 网络层：控制平面.md",
-    "DB/HW/hw13.md",
-    "CN/Source/Pasted image 20261104175823.png",
-    "DB/HW/hw7.md",
-    "15Days/SellerPilot/拷问.md",
-    "15Days/SellerPilot/项目介绍.md",
-    "15Days/算法/子串&数组.md",
-    "15Days/算法/双指针.md",
+    "数理逻辑/Chapter 8 一阶逻辑自然演绎系统的可靠性与应用.md",
+    "15Days/算法/回溯.md",
+    "15Days/算法/树 & 图.md",
     "15Days/算法/矩阵.md",
     "15Days/算法/哈希.md",
-    "db Lab/Lec 10.md",
-    "db Lab/Lec 9.md",
-    "DB/Ch12 物理存储系统.md",
+    "15Days/算法/链表.md",
+    "15Days/算法/双指针.md",
+    "15Days/Journals/2026-11-05.md",
+    "15Days/八股/JVM",
+    "15Days/Journals/2026-11-03.md",
+    "15Days/Journals/2026-11-01.md",
+    "15Days/Journals/2026-10-30.md",
+    "15Days/Journals/2026-10-29.md",
+    "15Days/Journals/2026-10-27.md",
+    "15Days/Journals/2026-10-25.md",
+    "15Days/Journals/2026-11-04.md",
+    "15Days/Journals/2026-11-02.md",
+    "DIP/Ch 9 形态学图像处理.md",
+    "15Days/八股/未命名",
+    "15Days/项目",
+    "15Days/八股",
+    "15Days/八股/Redis",
+    "15Days/项目/SellerPilot/项目介绍-修订版.md",
+    "15Days/项目/SellerPilot/拷问.md",
+    "15Days/项目/SellerPilot/项目拷打-整理版.md",
+    "15Days/项目/SellerPilot/逐字解释与安全引申.md",
+    "15Days/项目/SellerPilot/项目介绍.md",
+    "15Days/八股/MySQL/引擎.md",
+    "15Days/八股/MySQL/索引.md",
+    "15Days/八股/JavaSE/迭代器.md",
+    "15Days/src/Pasted image 20261104205729.png",
+    "CN/Ch5 网络层：控制平面.md",
+    "CN/Source/Pasted image 20261104175823.png",
     "db Lab/Source/Pasted image 20261104113415.png",
     "db Lab/Source/Pasted image 20261104114725.png",
     "db Lab/Source/Pasted image 20261104115223.png",
@@ -250,30 +283,11 @@
     "db Lab/Source/Pasted image 20261104120513.png",
     "db Lab/Source/Pasted image 20261104120606.png",
     "db Lab/Source/Pasted image 20261104121344.png",
-    "db Lab/Source/Pasted image 20261104134935.png",
-    "DB/Ch13 数据存储结构.md",
-    "DB/HW/hw1.md",
-    "DB/HW/hw2.md",
-    "DB/HW/hw6.md",
-    "DB/HW/hw4.md",
-    "DB/HW/hw3.md",
     "DB/HW",
     "DB/新建文件夹",
-    "15Days/SellerPilot/逐字解释与安全引申.md",
-    "15Days/SellerPilot/简历项目与技能改写-目标稿-2026-10-30.md",
-    "15Days/Journals/2026-11-03.md",
-    "DIP/Ch 9 形态学图像处理.md",
-    "ML/Ch9 决策树与集成方法.md",
-    "15Days/杂问/自我介绍.md",
-    "15Days/Journals/2026-11-02.md",
     "15Days/Journals",
     "15Days/算法/子串",
     "15Days/src",
-    "15Days/算法",
-    "verification/java",
-    "verification",
-    "15Days/DeepResearch",
-    "15Days/SellerPilot",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
